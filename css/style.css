@@ -566,7 +566,7 @@ ul.arrows li {
         }
 
         ul.arrows li i.left-arrow {
-            left: 23px;
+            left: 18px;
         }
 
     ul.arrows li:hover {
@@ -589,7 +589,7 @@ ul.arrows li {
 	2. Header Styles
 -------------------------------------------------------------------*/
 #header-holder {
-    height:1071px;
+    height:auto;
     position: relative;
     z-index: 100;
     background-color: #ffffff;
@@ -1622,11 +1622,8 @@ svg.logo text {
 }
 
 #header-holder.main-header .header-graphic {
-    width: auto;
-
-    max-width: 640px;
-    max-height:581px;
-    /*opacity: 0;*/
+    width: 100%;
+    margin-bottom: 70px;
 }
 
 @keyframes slide-fade1 {
@@ -7668,58 +7665,124 @@ span.status {
     margin-right: 3px;
 }
 
-
 .item {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #552988;
+    padding-top:40px;
+}
+
+    /*.item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 110%;
+        background-color: white;
+        right: -5px;
+        top: 80%;
+    }
+
+    .item:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 50%;
+        height: 100%;
+        background-color: #e0efe3;
+        left: 0;
+        top: 27%;
+    }*/
+
+.curve {
+    position:absolute;
+    bottom:0;
+    z-index:0;
+}
+
+/*.item {
     padding-top: 50px;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
     height: 1071px;
+    background-color: #552988;
 }
 
+    .item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 340px;
+        height: 1071px;
+        background-color: white;
+        right: -5px;
+        top: 40px;
+    }
 
-.item.orange {
-    background-image: url(../img/home-slider/slides/slide1-1920-2.png);
+    .item:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 300px;
+        height: 1071px;
+        background-color: #e0efe3;
+        left: 0;
+        top: 27px;
+    }*/
+
+/*.item.orange {
+    background-image: url(../img/home-slider/slide1.png);
 }
 
 .item.green {
-    background-image: url(../img/home-slider/slides/slide2-1920-2.png);
+    background-image: url(../img/home-slider/slide2.png);
 }
 
 .item.blue {
-    background-image: url(../img/home-slider/slides/slide3-1920-2.png);
+    background-image: url(../img/home-slider/slide3.png);
 }
 
 .item.yellow {
-    background-image: url(../img/home-slider/slides/slide4-1920-2.png);
+    background-image: url(../img/home-slider/slide4.png);
+}*/
+
+#slide1-avatar{
+    position:absolute;
+    z-index:1;
+    bottom:0;
+    left:50px;
 }
 
-
-
-    .item.orange span.status {
-        background: #D74C07;
-        box-shadow: 1px 2px 15px 0px #d74c077a;
-    }
+.item.orange span.status {
+    background: #D74C07;
+    /*box-shadow: 1px 2px 15px 0px #d74c077a;*/
+}
 
 
 
     .item.green span.status {
         background: #a145ff;
-        box-shadow: 1px 2px 15px 0px #a145ff7d;
+        /*box-shadow: 1px 2px 15px 0px #a145ff7d;*/
     }
 
 
 
     .item.blue span.status {
         background: #178ECE;
-        box-shadow: 1px 2px 15px 0px #178ece82;
+        /*box-shadow: 1px 2px 15px 0px #178ece82;*/
     }
 
 
     .item.yellow span.status {
         background: #E3C102;
-        box-shadow: 1px 2px 15px 0px #e3c10282;
+        /*box-shadow: 1px 2px 15px 0px #e3c10282;*/
     }
 
 
@@ -7811,13 +7874,13 @@ span.status {
 
 .carousel-indicators {
     background: #fff;
-    padding: 10px 30px;
+    padding: 5px 30px;
     border-radius: 50px;
-    bottom: 80px;
+    bottom: 15px;
     left: 25%;
     width: auto;
     margin-left: 0;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.24);
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.24);
 }
 
     .carousel-indicators li {
@@ -8264,6 +8327,7 @@ section.events ul.events {
         justify-content: space-around;
         align-items: center;
         padding: 20px 0px;
+        border-bottom: 1px solid whitesmoke;
     }
 
         section.events ul.events li.active {
@@ -8286,7 +8350,7 @@ section.events ul.events {
             z-index: 99;
         }
 
-            section.events ul.events li span.date::before {
+            /*section.events ul.events li span.date::before {
                 content: '';
                 background: url(../img/branches/overlay1.png);
                 position: absolute;
@@ -8312,7 +8376,7 @@ section.events ul.events {
                 background-repeat: no-repeat;
                 background-size: cover;
                 animation: rotate 20s ease-in-out infinite;
-            }
+            }*/
 
         section.events ul.events li p {
             text-align: center;
@@ -8925,7 +8989,7 @@ ul.events {
 .products .hero {
     width: 100%;
     height: 85vh;
-    background-image: url('../img/products/hero-bg.png');
+    background-image: url('../img/products/hero-bg1.png');
     background-size: cover;
     background-position: bottom;
     transition: all 0.5s linear;
@@ -8933,23 +8997,23 @@ ul.events {
 }
 
 .products.facial .hero {
-    background-image: url('../img/products/Facial.png');
+    background-image: url('../img/products/Facial1.png');
 }
 
 .products.kitchen .hero {
-    background-image: url('../img/products/Kitchen.png');
+    background-image: url('../img/products/Kitchen1.png');
 }
 
 .products.pocket .hero {
-    background-image: url('../img/products/Pocket.png');
+    background-image: url('../img/products/Pocket1.png');
 }
 
 .products.Toilet .hero {
-    background-image: url('../img/products/Toilet.png');
+    background-image: url('../img/products/Toilet1.png');
 }
 
 .products.Napkins .hero {
-    background-image: url('../img/products/Napkins.png');
+    background-image: url('../img/products/Napkins1.png');
 }
 
 .products ul.nav {
@@ -8957,7 +9021,7 @@ ul.events {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: -150px;
     border-bottom: 0;
     margin-bottom: 70px;
 }
@@ -8990,6 +9054,7 @@ ul.events {
 
         .products ul.nav li p {
             font-size: 13px;
+            font-weight:800;
             color: #552988;
             transition: all 0.3s ease-in-out;
         }
@@ -9026,12 +9091,13 @@ ul.events {
 
 .all-products .right .content .color,
 .allx .right .content .color {
-    float: left;
+    float: right;
+    margin-top: 5px;
 }
 
 .all-products .left .content .color,
 .allx .left .content .color {
-    float: right;
+    float: left;
 }
 
 .product-details,
@@ -9047,16 +9113,49 @@ ul.events {
         top: 0;
         right: 0;
         height: 75%;
-        background: linear-gradient(279deg, #552988, #e289ff);
+        background: #552988;
         background-size: 400% 400%;
-        -webkit-animation: AnimationName 8s ease infinite;
-        -moz-animation: AnimationName 8s ease infinite;
-        -o-animation: AnimationName 8s ease infinite;
-        animation: AnimationName 8s ease infinite;
-        width: 500px;
+        width: 650px;
         /* border-radius: 125.5% 237px 330px 104px; */
         /* transform: rotate(-120deg); */
     }
+
+    .product-details.left::before,
+    .left.x::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 75%;
+        background: #552988;
+        background-size: 400% 400%;
+        width: 650px;
+        /* border-radius: 125.5% 237px 330px 104px;
+    transform: rotate(180deg); */
+    }
+
+#nylon-550::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75%;
+    background: #552988;
+    background-size: 400% 400%;
+    width: 650px;
+}
+
+.product-details.left .slider .slick-list {
+    padding: 0 0 0 55% !important;
+    min-height: 455px;
+    margin-left: -400px;
+}
+
+.product-details.right .facial-slider .slick-list {
+    padding: 0 !important;
+    min-height: 455px;
+    margin-right: -200px;
+}
 
 @-webkit-keyframes AnimationName {
     0% {
@@ -9114,23 +9213,7 @@ ul.events {
     }
 }
 
-.product-details.left::before,
-.left.x::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 75%;
-    background: linear-gradient(279deg, #552988, #e289ff);
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 8s ease infinite;
-    -moz-animation: AnimationName 8s ease infinite;
-    -o-animation: AnimationName 8s ease infinite;
-    animation: AnimationName 8s ease infinite;
-    width: 500px;
-    /* border-radius: 125.5% 237px 330px 104px;
-    transform: rotate(180deg); */
-}
+
 
 .product-details .type,
 .x .type {
@@ -9156,12 +9239,13 @@ ul.events {
 .x .name {
     color: #000;
     font-size: 29px;
-    margin: 32px;
+    margin: 0;
+    margin-bottom:35px;
 }
 
 .product-details.left .name,
 .x.left .name {
-    text-align: left;
+    text-align: right;
 }
 
 .slick-dots {
@@ -9240,10 +9324,11 @@ ul.events {
 .product-details .options,
 .x .options {
     list-style: none;
-    padding: 14px;
+    padding: 10px;
     background: white;
     box-shadow: 0px 5px 5px rgba(124, 124, 124, 0.14);
     display: inline-block;
+    margin-bottom:50px;
 }
 
     .product-details .options img,
@@ -9254,7 +9339,7 @@ ul.events {
 
     .product-details .options li:last-child img,
     .x .options li:last-child img {
-        margin-right: 0px;
+        margin-right: 15px;
     }
 
 .w-100 {
@@ -9325,14 +9410,20 @@ ul.events {
         -webkit-transform: scale(1.1, 1.1);
     }
 
-.product-details.right .slider .slick-list {
-    /* padding: 0 35% 0 0; */
+.product-details.right .nylon-slider .slick-list {
+    padding: 0 45% 0 0 !important;
     min-height: 455px;
+    margin-right: -400px;
+}
+.product-details.right .pocket-slider .slick-list {
+    padding: 0!important;
+    min-height: 455px;
+    margin-right: -200px;
 }
 
-.product-details.left .slider .slick-list {
-    padding: 0 0 0 35%;
-}
+    .product-details.left .slider .slick-list {
+        padding: 0 0 0 35%;
+    }
 
 .product-details.left .content {
     text-align: right;
@@ -9357,7 +9448,7 @@ ul.events {
 }
 
 .product-details.left .arrows li:first-child i {
-    left: 18px
+    left: 23px
 }
 
 .single-product-details .filter-button-group {
@@ -9561,7 +9652,7 @@ ul.events {
     background-image: url(../img/careers/careerbg.png);
     margin-bottom: 50px;
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     background-size: cover;
     background-position: bottom;
     transition: all 0.5s linear;
@@ -9586,7 +9677,7 @@ ul.events {
 .careers .job {
     background: white;
     box-shadow: 5.5px 0px 18px rgba(48, 48, 48, 0.16);
-    padding: 18px 13px 21px 20px;
+    padding: 18px;
     margin-bottom: 60px;
 }
 
@@ -9605,7 +9696,7 @@ ul.events {
     }
 
         .careers .job .title h2 {
-            font-size: 20px;
+            font-size: 27px;
             color: #5B6075;
         }
 
@@ -9614,7 +9705,8 @@ ul.events {
             border: 1px dashed #552988;
             padding: 5px;
             border-radius: 15px;
-            font-size: 10.5px;
+            font-size: 13px;
+            font-weight: 900
         }
 
     .careers .job ul.specs {
@@ -9624,8 +9716,9 @@ ul.events {
 
         .careers .job ul.specs li,
         .careers .job .desc p {
-            font-size: 10.5px;
+            font-size: 15px;
             color: #5B6075;
+            font-weight: 500;
         }
 
     .careers .job .desc p {
@@ -9652,8 +9745,9 @@ ul.events {
         }
 
         .careers .job .info span {
-            font-size: 11.3px;
+            font-size: 14px;
             color: #5B6075;
+            font-weight: 900;
         }
 
 .career-apply .modal-dialog {
@@ -9936,7 +10030,6 @@ ul.events {
 .career-details .job-qualification p {
     font-size: 20px;
     color: #5B6075;
-    ;
     margin-bottom: 40px;
 }
 
@@ -9957,4 +10050,17 @@ ul.events {
 
 .career-details .btn {
     margin-bottom: 230px;
+}
+
+
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+
+.single-product-details .slick-dots li {
+    position: absolute;
+    right: -350px;
+    top: -450px;
 }

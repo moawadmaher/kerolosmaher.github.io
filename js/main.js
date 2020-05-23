@@ -165,31 +165,31 @@ $(document).ready(function() {
     });
 });
 
-function trigger_nylon() {
-    $('#nylon').trigger("click");
-}
+//function trigger_nylon() {
+//    $('#nylon').trigger("click");
+//}
 
-function trigger_Compressed() {
-    $('#Compressed').trigger("click");
-}
+//function trigger_Compressed() {
+//    $('#Compressed').trigger("click");
+//}
 
-function trigger_colored() {
-    $('#colored').trigger("click");
-}
+//function trigger_colored() {
+//    $('#colored').trigger("click");
+//}
 
-function trigger_CCompressed() {
-    $('#CCompressed').trigger("click");
-}
+//function trigger_CCompressed() {
+//    $('#CCompressed').trigger("click");
+//}
 
-function trigger_Colorrred() {
-    $('#Colorrred').trigger("click");
-}
+//function trigger_Colorrred() {
+//    $('#Colorrred').trigger("click");
+//}
 
 $(window).load(function() {
     // products
 
     $('.nylon-slider').slick({
-        dots: true,
+        dots: false,
         centerMode: true,
         centerPadding: '0',
         infinite: true,
@@ -199,23 +199,25 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.nylon li.right'),
-        nextArrow: $('ul.nylon li.left'),
+        nextArrow: $('ul.nylon li.left')
     });
     $('.kitchen-slider').slick({
-        dots: true,
+        rtl: true,
+        dots: false,
         centerMode: true,
         centerPadding: '0',
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToScroll: -1,
         focusOnSelect: true,
-        prevArrow: $('ul.kitchen li.right'),
-        nextArrow: $('ul.kitchen li.left'),
+        prevArrow: $('ul.nylon li.right'),
+        nextArrow: $('ul.nylon li.left')
+        
     });
     $('.pocket-slider').slick({
-        dots: true,
+        dots: false,
         centerMode: true,
         centerPadding: '0',
         infinite: true,
@@ -225,7 +227,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.pocket li.right'),
-        nextArrow: $('ul.pocket li.left'),
+        nextArrow: $('ul.pocket li.left')
     });
     $('.Toilet-slider').slick({
         dots: true,
@@ -238,12 +240,29 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.Toilet li.right'),
-        nextArrow: $('ul.Toilet li.left'),
+        nextArrow: $('ul.Toilet li.left')
     });
     $('.facial-slider').slick({
         dots: true,
         centerMode: true,
-        centerPadding: '0',
+
+        customPaging: function (slider, i) {
+            if (i === 0) {
+                return '<img src="img/products/white/100-Classic-white.png" style="position:absolute;right:0;top:0;width:120px;"/>';
+            }
+            if (i === 1) {
+                return '<img src="img/products/white/100-Classic-white.png" style="position:absolute;right:0;top:80px;width:120px;"/>';
+            }
+            if (i === 2) {
+                return '<img src="img/products/white/550-Classic-white.png" style="position:absolute;right:0;top:160px;width:120px;"/>';
+            }
+            if (i === 3) {
+                return '<img src="img/products/white/550-Classic-white.png" style="position:absolute;right:0;top:240px;width:120px;"/>';
+            }
+
+
+            
+        },
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
