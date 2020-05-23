@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\img"
+    "\\img",
+    "\\img\\products",
+    "\\img\\products\\white",
+    "\\js"
   ],
-  "SelectedNode": "\\css",
+  "SelectedNode": "\\img\\products\\white\\100-Classic.png",
   "PreviewInSolutionExplorer": false
 }

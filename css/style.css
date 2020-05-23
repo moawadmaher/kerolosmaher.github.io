@@ -492,7 +492,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
+    /*.loader img {
+        -webkit-animation: KEYFRAME-NAME 7s infinite;
+        -moz-animation: KEYFRAME-NAME 7s infinite;
+        -o-animation: KEYFRAME-NAME 7s infinite;
+        animation: KEYFRAME-NAME 7s infinite;
+    }*/
 
 .mainColor {
     color: #0054a6 !important;
@@ -10064,3 +10072,49 @@ ul.events {
     right: -350px;
     top: -450px;
 }
+
+/*@keyframes KEYFRAME-NAME {
+    0% {
+        opacity: 0.1;
+    }
+
+    10% {
+        opacity: 0.3;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    30% {
+        opacity: 0.7;
+    }
+
+    40% {
+        opacity: 0.9;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.1;
+    }
+
+    90% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}*/
