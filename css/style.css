@@ -1630,7 +1630,7 @@ svg.logo text {
 }
 
 #header-holder.main-header .header-graphic {
-    width: 100%;
+    width: 80%;
     margin-bottom: 70px;
 }
 
@@ -7884,7 +7884,7 @@ span.status {
     background: #fff;
     padding: 5px 30px;
     border-radius: 50px;
-    bottom: 15px;
+    bottom: 0px;
     left: 25%;
     width: auto;
     margin-left: 0;
