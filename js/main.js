@@ -248,10 +248,10 @@ $(window).load(function() {
 
         customPaging: function (slider, i) {
             if (i === 0) {
-                return '<img src="img/products/white/100-Classic-white.png" style="position:absolute;right:0;top:0;width:120px;"/>';
+                return '<img src="img/products/white/100-Classic.png" style="position:absolute;right:0;top:0;width:120px;"/>';
             }
             if (i === 1) {
-                return '<img src="img/products/white/100-Classic-white.png" style="position:absolute;right:0;top:80px;width:120px;"/>';
+                return '<img src="img/products/white/100-Classic.png" style="position:absolute;right:0;top:80px;width:120px;"/>';
             }
             if (i === 2) {
                 return '<img src="img/products/white/550-Classic-white.png" style="position:absolute;right:0;top:160px;width:120px;"/>';
