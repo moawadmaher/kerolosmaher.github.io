@@ -8,11 +8,13 @@ $(window).load(function() {
 $(document).ready(function() {
 
     /* Home Slider */
-
-
     /* branches */
 
-    $('.branches .cssr').click(function(e) {
+    $('.branches .cssr').click(function (e) {
+
+        $('#message1').show();
+
+
         e.preventDefault();
         $(".branches .for-arrow").removeClass("active");
         $(this).parent().toggleClass('active');
@@ -28,8 +30,14 @@ $(document).ready(function() {
             nextArrow: $('ul.csr li.left')
         });
 
-    })
-    $('.branches .qcc').click(function(e) {
+        
+
+    });
+    $('.branches .qcc').click(function (e) {
+
+        $('#message1').show();
+
+
         e.preventDefault();
         $(".branches .for-arrow").removeClass("active");
         $(this).parent().toggleClass('active');
@@ -45,9 +53,14 @@ $(document).ready(function() {
             nextArrow: $('ul.qc li.left')
         });
 
-    })
+        
+    });
 
-    $('.branches .eventss').click(function(e) {
+    $('.branches .eventss').click(function (e) {
+
+        $('#message1').show();
+
+
         e.preventDefault();
         $(".branches .for-arrow").removeClass("active");
         $(this).parent().toggleClass('active');
@@ -63,6 +76,7 @@ $(document).ready(function() {
             nextArrow: $('ul.event li.left')
         });
 
+        
     });
 
     $(".carousel").swipe({
@@ -99,59 +113,67 @@ $(document).ready(function() {
 
 
     // products Tabs
-    $('.products a').click(function() {
+    $('.products a').click(function () {
         $('.all-products').fadeOut();
-    })
-    $('.products a.facial').click(function() {
-        $('.products').addClass('facial').removeClass('Kitchen pocket Toilet Napkins');
-    })
-    $('.products a.Kitchen').click(function() {
-        $('.products').addClass('Kitchen').removeClass('facial pocket Toilet Napkins');
-    })
-    $('.products a.pocket').click(function() {
-        $('.products').addClass('pocket').removeClass('facial Kitchen Toilet Napkins');
-    })
-    $('.products a.Toilet').click(function() {
-        $('.products').addClass('Toilet').removeClass('facial Kitchen pocket Napkins');
-    })
-    $('.products a.Napkins').click(function() {
-        $('.products').addClass('Napkins').removeClass('facial Kitchen pocket Toilet');
-    })
+    });
+    $('.products a.facial').click(function () {
+        $('#hero-bg').attr("src", "./img/products/Facial1.png");
+
+        //$('.products').addClass('facial').removeClass('Kitchen pocket Toilet Napkins');
+    });
+    $('.products a.Kitchen').click(function () {
+        $('#hero-bg').attr("src", "./img/products/Kitchen1.png");
+
+        //$('.products').addClass('Kitchen').removeClass('facial pocket Toilet Napkins');
+    });
+    $('.products a.pocket').click(function () {
+        $('#hero-bg').attr("src", "./img/products/Pocket1.png");
+
+        //$('.products').addClass('pocket').removeClass('facial Kitchen Toilet Napkins');
+    });
+    $('.products a.Toilet').click(function () {
+        $('#hero-bg').attr("src", "./img/products/Toilet1.png");
+
+        //$('.products').addClass('Toilet').removeClass('facial Kitchen pocket Napkins');
+    });
+    $('.products a.Napkins').click(function () {
+        $('#hero-bg').attr("src", "./img/products/Napkins1.png");
+
+        //$('.products').addClass('Napkins').removeClass('facial Kitchen pocket Toilet');
+    });
 
     // change img color
 
-    $('.products a.facial').mouseenter(function() {
+    $('.products a.facial').mouseenter(function () {
         $(this).find('img').attr("src", "img/products/product1-wh.png");
-    })
-    $('.products a.facial').mouseleave(function() {
+    });
+    $('.products a.facial').mouseleave(function () {
         $(this).find('img').attr("src", "img/products/product1.png");
-    })
-    $('.products a.kitchen').mouseenter(function() {
+    });
+    $('.products a.kitchen').mouseenter(function () {
         $(this).find('img').attr("src", "img/products/product2-wh.png");
-    })
-    $('.products a.kitchen').mouseleave(function() {
+    });
+    $('.products a.kitchen').mouseleave(function () {
         $(this).find('img').attr("src", "img/products/product2.png");
-    })
-
-    $('.products a.pocket').mouseenter(function() {
+    });
+    $('.products a.pocket').mouseenter(function () {
         $(this).find('img').attr("src", "img/products/product3-wh.png");
-    })
-    $('.products a.pocket').mouseleave(function() {
+    });
+    $('.products a.pocket').mouseleave(function () {
         $(this).find('img').attr("src", "img/products/product3.png");
-    })
-
-    $('.products a.Toilet').mouseenter(function() {
+    });
+    $('.products a.Toilet').mouseenter(function () {
         $(this).find('img').attr("src", "img/products/product4-wh.png");
-    })
-    $('.products a.Toilet').mouseleave(function() {
+    });
+    $('.products a.Toilet').mouseleave(function () {
         $(this).find('img').attr("src", "img/products/product4.png");
-    })
-    $('.products a.Napkins').mouseenter(function() {
+    });
+    $('.products a.Napkins').mouseenter(function () {
         $(this).find('img').attr("src", "img/products/product5-wh.png");
-    })
-    $('.products a.Napkins').mouseleave(function() {
+    });
+    $('.products a.Napkins').mouseleave(function () {
         $(this).find('img').attr("src", "img/products/product5.png");
-    })
+    });
 
 
     /* Add new dropdown */
@@ -212,8 +234,8 @@ $(window).load(function() {
         slidesToShow: 1,
         slidesToScroll: -1,
         focusOnSelect: true,
-        prevArrow: $('ul.nylon li.right'),
-        nextArrow: $('ul.nylon li.left')
+        prevArrow: $('ul.kitchen li.right'),
+        nextArrow: $('ul.kitchen li.left')
         
     });
     $('.pocket-slider').slick({
@@ -260,8 +282,6 @@ $(window).load(function() {
                 return '<img src="img/products/white/550-Classic-white.png" style="position:absolute;right:0;top:240px;width:120px;"/>';
             }
 
-
-            
         },
         infinite: true,
         autoplay: true,
@@ -270,7 +290,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.facial li.right'),
-        nextArrow: $('ul.facial li.left'),
+        nextArrow: $('ul.facial li.left')
     });
     $('.aroma-slider').slick({
         dots: true,
@@ -283,7 +303,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.aroma li.right'),
-        nextArrow: $('ul.aroma li.left'),
+        nextArrow: $('ul.aroma li.left')
     });
     $('.duplex-slider').slick({
         dots: true,
@@ -294,7 +314,7 @@ $(window).load(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: $('ul.duplex li.right'),
-        nextArrow: $('ul.duplex li.left'),
+        nextArrow: $('ul.duplex li.left')
     });
     $('.compressed-slider').slick({
         dots: true,
@@ -307,7 +327,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.compressed li.right'),
-        nextArrow: $('ul.compressed li.left'),
+        nextArrow: $('ul.compressed li.left')
     });
     $('.semi-compressed-slider').slick({
         dots: true,
@@ -320,7 +340,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.semi-compressed li.right'),
-        nextArrow: $('ul.semi-compressed li.left'),
+        nextArrow: $('ul.semi-compressed li.left')
     });
     $('.colored-slider').slick({
         dots: true,
@@ -333,7 +353,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.colored li.right'),
-        nextArrow: $('ul.colored li.left'),
+        nextArrow: $('ul.colored li.left')
     });
     $('.aa-slider').slick({
         dots: true,
@@ -346,7 +366,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.aa li.right'),
-        nextArrow: $('ul.aa li.left'),
+        nextArrow: $('ul.aa li.left')
     });
     $('.CCompressed-slider').slick({
         dots: true,
@@ -359,7 +379,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.CCompressed li.right'),
-        nextArrow: $('ul.CCompressed li.left'),
+        nextArrow: $('ul.CCompressed li.left')
     });
     $('.SSemi-compressed-slider').slick({
         dots: true,
@@ -372,7 +392,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.SSemi-compressed li.right'),
-        nextArrow: $('ul.SSemi-compressed li.left'),
+        nextArrow: $('ul.SSemi-compressed li.left')
     });
     $('.economy-slider').slick({
         dots: true,
@@ -385,7 +405,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.economy li.right'),
-        nextArrow: $('ul.economy li.left'),
+        nextArrow: $('ul.economy li.left')
     });
     $('.arroma-slider').slick({
         dots: true,
@@ -398,7 +418,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.arroma li.right'),
-        nextArrow: $('ul.arroma li.left'),
+        nextArrow: $('ul.arroma li.left')
     });
     $('.Colorrred-slider').slick({
         dots: true,
@@ -411,7 +431,7 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.Colorrred li.right'),
-        nextArrow: $('ul.Colorrred li.left'),
+        nextArrow: $('ul.Colorrred li.left')
     });
     $('.white-slider').slick({
         dots: true,
@@ -424,28 +444,17 @@ $(window).load(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.white li.right'),
-        nextArrow: $('ul.white li.left'),
+        nextArrow: $('ul.white li.left')
     });
 
     //allslick make ease
-
-
-
-
-
-
-
-
-
-
     $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
         // init Isotope
         var $grid = $('.items').isotope({
             // options
-
         });
         // filter items on button click
-        $('.filter-button-group').on('click', 'button', function() {
+        $('.filter-button-group').on('click', 'button', function () {
             $(this).addClass('active').siblings().removeClass('active');
             $(this).addClass('in').siblings().removeClass('in');
             var filterValue = $(this).attr('data-filter');
@@ -455,14 +464,12 @@ $(window).load(function() {
             } else {
                 $('.items').removeClass('visible');
             }
-        })
-        $('.filter-group').on('click', 'button', function() {
+        });
+        $('.filter-group').on('click', 'button', function () {
             $(this).addClass('active').siblings().removeClass('active');
             $(this).addClass('in').siblings().removeClass('in');
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({ filter: filterValue });
-        })
+        });
     });
-
-
 });

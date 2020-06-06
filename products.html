@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/hamburgers.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/cust-reponsive.css" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
@@ -35,7 +37,7 @@
     <meta name="theme-color" content="#ffffff" />
 </head>
 
-<body class="fix-lag">
+<body class="fix-lag" style="overflow-y: auto;overflow-x: hidden;">
 
     <!-- Loader -->
     <div class="loader">
@@ -64,7 +66,7 @@
                                     <li><a href="index.html">HOME</a></li>
                                     <li><a href="products.html">OUR PRODUCTS</a></li>
                                     <li><a href="career-list.html">CAREERS</a></li>
-                                    <li><a href="#">CONTACT US</a></li>
+                                    <li><a href="contact.html">CONTACT US</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -76,9 +78,9 @@
 
 
     </div>
-
-    <main class="products">
-        <section class="hero"></section>
+    <img id="hero-bg" src="./img/products/hero-bg1.png" />
+    <div class="products container-fluid"  style="padding:0;">
+        <!--<section class="hero"></section>-->
         <!-- tabs -->
         <ul class="nav nav-tabs">
             <li>
@@ -124,165 +126,216 @@
                         <button data-filter=".duplex">Duplex</button>
                     </div>
                     <div class="items visible">
-                        <div class="w-100 right x nylon product-details right" style="position: absolute; left: 0px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
+                        <!-- facial -->
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-5 col-xs-12">
-                                        <div class="content">
-                                            <p class="type">FACIAL</p>
+                        <div class="product-details right">
+                            <!--<div class="container">-->
+                            <div class="row m-b-100">
+                                <div class="col-md-5">
+                                    <div class="content">
+                                        <p class="type">FACIAL</p>
 
-                                            <h2 class="name">
-                                                Nylon 550 Colored <!--<span class="color blue"></span>-->
-                                            </h2>
+                                        <h2 class="name">
+                                            Nylon 550 Colored <!--<span class="color blue"></span>-->
+                                        </h2>
 
-                                            <ul class="options">
-                                                <li>
-                                                    <img src="img/products/option1.png">
-                                                    <img src="img/products/option2.png" style="margin-right:0;">
-                                                </li>
-                                            </ul>
-                                            <ul class="facial arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <ul class="options">
+                                            <li>
+                                                <img src="img/products/options/550-Classic-white.png">
+                                                <img src="img/products/option1.png">
+                                                <img src="img/products/option2.png" style="margin-right:0;">
+                                            </li>
+                                        </ul>
+                                        <ul class="nylon arrows">
+                                            <li class="right">
+                                                <i class="fa fa-angle-left right-arrow"></i>
+                                            </li>
+                                            <li class="left">
+                                                <i class="fa fa-angle-right left-arrow"></i>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="col-md-7 col-xs-12">
-                                        <div class="facial-slider slider">
-                                            <div>
-
-                                                <img src="img/products/all/facial/550/Nylon-550-B.png">
-                                            </div>
-                                            <div>
-                                                <img src="img/products/all/facial/550/Nylon-550-G.png">
-                                            </div>
-                                            <div>
-                                                <img src="img/products/all/facial/550/Nylon-550-P.png">
-                                            </div>
-                                            <div>
-                                                <img src="img/products/all/facial/550/Nylon-550-Y.png">
-                                            </div>
+                                </div>
+                                <div class="col-md-7" style="padding:0;">
+                                    <div class="background-right"></div>
+                                    <div class="nylon-slider slider">
+                                        <div class="slide-size">
+                                            <img src="img/products/all/facial/550/Nylon-550-B.png">
+                                        </div>
+                                        <div class="slide-size">
+                                            <img src="img/products/all/facial/550/Nylon-550-G.png">
+                                        </div>
+                                        <div class="slide-size">
+                                            <img src="img/products/all/facial/550/Nylon-550-P.png">
+                                        </div>
+                                        <div class="slide-size">
+                                            <img src="img/products/all/facial/550/Nylon-550-Y.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--</div>-->
                         </div>
+                        <!-- end facial -->
+                        <!--<div class="w-100 right x nylon product-details right" style="position: absolute; left: 0px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="content">
+                        <p class="type">FACIAL</p>
+
+                        <h2 class="name">
+                            Nylon 550 Colored
+                        </h2>
+
+                        <ul class="options">
+                            <li>
+                                <img src="img/products/option1.png">
+                                <img src="img/products/option2.png" style="margin-right:0;">
+                            </li>
+                        </ul>
+                        <ul class="facial arrows">
+                            <li class="right">
+                                <i class="fa fa-angle-left right-arrow"></i>
+                            </li>
+                            <li class="left">
+                                <i class="fa fa-angle-right left-arrow"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="facial-slider slider">
+                        <div>
+
+                            <img src="img/products/all/facial/550/Nylon-550-B.png">
+                        </div>
+                        <div>
+                            <img src="img/products/all/facial/550/Nylon-550-G.png">
+                        </div>
+                        <div>
+                            <img src="img/products/all/facial/550/Nylon-550-P.png">
+                        </div>
+                        <div>
+                            <img src="img/products/all/facial/550/Nylon-550-Y.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
                         <!--<div class="w-100 left aroma x" style="position: absolute; left: 0px; display: none;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-5 col-xs-12">
-                                        <div class="content">
-                                            <p class="type">Aroma</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <div class="content">
+                        <p class="type">Aroma</p>
 
 
-                                            <ul class="options">
-                                                <li>
-                                                    <img src="img/products/option-icons/facial.png">
-                                                </li>
-                                            </ul>
-                                            <ul class="aroma arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-xs-12">
-                                        <div class="aroma-slider slider">
-                                            <div>
-                                                <h2 class="name">
-                                                    Nylon 545 Colored <span class="color yellow"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                            <div>
-                                                <h2 class="name">
-                                                    a product name 599 Colored <span class="color blue"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                            <div>
-                                                <h2 class="name">
-                                                    Nylon 509 Colored <span class="color orange"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                            <div>
-                                                <h2 class="name">
-                                                    product 44449 Colored <span class="color yellow"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                        <ul class="options">
+                            <li>
+                                <img src="img/products/option-icons/facial.png">
+                            </li>
+                        </ul>
+                        <ul class="aroma arrows">
+                            <li class="right">
+                                <i class="fa fa-angle-left right-arrow"></i>
+                            </li>
+                            <li class="left">
+                                <i class="fa fa-angle-right left-arrow"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <div class="aroma-slider slider">
+                        <div>
+                            <h2 class="name">
+                                Nylon 545 Colored <span class="color yellow"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
                         </div>
-                        <div class="w-100 right duplex x" style="position: absolute; left: 0px; display: none;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-5 col-xs-12">
-                                        <div class="content">
-                                            <p class="type">Duplex</p>
+                        <div>
+                            <h2 class="name">
+                                a product name 599 Colored <span class="color blue"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
+                        </div>
+                        <div>
+                            <h2 class="name">
+                                Nylon 509 Colored <span class="color orange"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
+                        </div>
+                        <div>
+                            <h2 class="name">
+                                product 44449 Colored <span class="color yellow"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-                                            <ul class="options">
-                                                <li>
-                                                    <img src="img/products/option-icons/facial.png">
+    </div>
+    <div class="w-100 right duplex x" style="position: absolute; left: 0px; display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <div class="content">
+                        <p class="type">Duplex</p>
 
-                                                </li>
-                                            </ul>
-                                            <ul class="duplex arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-xs-12">
-                                        <div class="duplex-slider slider">
-                                            <div>
-                                                <h2 class="name">
-                                                    Nylon 545 Colored <span class="color yellow"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                            <div>
-                                                <h2 class="name">
-                                                    a product name 599 Colored <span class="color blue"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                            <div>
-                                                <h2 class="name">
-                                                    Nylon 509 Colored <span class="color orange"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                            <div>
-                                                <h2 class="name">
-                                                    product 44449 Colored <span class="color yellow"></span>
-                                                </h2>
-                                                <img src="img/products/all/facial/200/6223001241720 (4).png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
+
+                        <ul class="options">
+                            <li>
+                                <img src="img/products/option-icons/facial.png">
+
+                            </li>
+                        </ul>
+                        <ul class="duplex arrows">
+                            <li class="right">
+                                <i class="fa fa-angle-left right-arrow"></i>
+                            </li>
+                            <li class="left">
+                                <i class="fa fa-angle-right left-arrow"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <div class="duplex-slider slider">
+                        <div>
+                            <h2 class="name">
+                                Nylon 545 Colored <span class="color yellow"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
+                        </div>
+                        <div>
+                            <h2 class="name">
+                                a product name 599 Colored <span class="color blue"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
+                        </div>
+                        <div>
+                            <h2 class="name">
+                                Nylon 509 Colored <span class="color orange"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
+                        </div>
+                        <div>
+                            <h2 class="name">
+                                product 44449 Colored <span class="color yellow"></span>
+                            </h2>
+                            <img src="img/products/all/facial/200/6223001241720 (4).png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
                     </div>
                 </div>
             </div>
@@ -899,167 +952,144 @@
             <!-- facial -->
 
             <div class="product-details right">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-xs-12">
-                            <div class="content">
-                                <p class="type">FACIAL</p>
+                <!--<div class="container">-->
+                <div class="row m-b-100">
+                    <div class="col-md-5">
+                        <div class="content">
+                            <p class="type">FACIAL</p>
 
-                                <h2 class="name">
-                                    Nylon 550 Colored <!--<span class="color blue"></span>-->
-                                </h2>
+                            <h2 class="name">
+                                Nylon 550 Colored <!--<span class="color blue"></span>-->
+                            </h2>
 
-                                <ul class="options">
-                                    <li>
-                                        <img src="img/products/options/550-Classic-white.png">
-                                        <img src="img/products/option1.png">
-                                        <img src="img/products/option2.png" style="margin-right:0;">
-                                    </li>
-                                </ul>
-                                <ul class="nylon arrows">
-                                    <li class="right">
-                                        <i class="fa fa-angle-left right-arrow"></i>
-                                    </li>
-                                    <li class="left">
-                                        <i class="fa fa-angle-right left-arrow"></i>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="options">
+                                <li>
+                                    <img src="img/products/options/550-Classic-white.png">
+                                    <img src="img/products/option1.png">
+                                    <img src="img/products/option2.png" style="margin-right:0;">
+                                </li>
+                            </ul>
+                            <ul class="nylon arrows">
+                                <li class="right">
+                                    <i class="fa fa-angle-left right-arrow"></i>
+                                </li>
+                                <li class="left">
+                                    <i class="fa fa-angle-right left-arrow"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-7 col-xs-12">
-                            <div class="nylon-slider slider">
-                                <div>
-
-                                    <img src="img/products/all/facial/550/Nylon-550-B.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/facial/550/Nylon-550-G.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/facial/550/Nylon-550-P.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/facial/550/Nylon-550-Y.png">
-                                </div>
+                    </div>
+                    <div class="col-md-7" style="padding:0;">
+                        <div class="background-right"></div>
+                        <div class="nylon-slider slider">
+                            <div class="slide-size">
+                                <img src="img/products/all/facial/550/Nylon-550-B.png">
+                            </div>
+                            <div class="slide-size">
+                                <img src="img/products/all/facial/550/Nylon-550-G.png">
+                            </div>
+                            <div class="slide-size">
+                                <img src="img/products/all/facial/550/Nylon-550-P.png">
+                            </div>
+                            <div class="slide-size">
+                                <img src="img/products/all/facial/550/Nylon-550-Y.png">
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--</div>-->
             </div>
-            <!-- end facial -->
-            <!-- kitchen -->
+                <!-- end facial -->
+                <!-- kitchen -->
 
             <div class="product-details left">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-7 col-xs-12">
-                            <div dir="rtl" class="kitchen-slider slider">
-                                <div>
-
-                                    <img src="img/products/all/kitchen/Kitchen-Economy-2-Rolls.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/kitchen/2-Rolls-Kitchen--package_92015.png">
-                                </div>
-
+                <!--<div class="container">-->
+                <div class="row m-b-100">
+                    <div class="col-md-7" style="padding:0;">
+                        <div class="background-left"></div>
+                        <div dir="rtl" class="kitchen-slider slider">
+                            <div class="slide-size">
+                                <img src="img/products/all/kitchen/Kitchen-Economy-2-Rolls.png">
                             </div>
-                        </div>
-                        <div class="col-md-5 col-xs-12">
-                            <div class="content">
-                                <p class="type">KITCHEN</p>
-
-                                <h2 class="name">
-                                    Kitchen Compressed <!--<span class="color blue"></span>-->
-                                </h2>
-
-                                <ul class="options">
-                                    <li>
-                                        <img src="img/products/options/550-Classic-white.png">
-                                        <img src="img/products/option1.png">
-                                        <img src="img/products/option2.png" style="margin-right:0;">
-                                    </li>
-                                </ul>
-                                <ul class="kitchen arrows">
-                                    <li class="right">
-                                        <i class="fa fa-angle-left right-arrow"></i>
-                                    </li>
-                                    <li class="left">
-                                        <i class="fa fa-angle-right left-arrow" style="left: 18px;"></i>
-                                    </li>
-                                </ul>
+                            <div class="slide-size">
+                                <img src="img/products/all/kitchen/2-Rolls-Kitchen--package_92015.png">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- end kitchen -->
-            <!-- POCKET -->
+                    <div class="col-md-5">
+                        <div class="content">
+                            <p class="type">KITCHEN</p>
 
-            <div class="product-details right">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-xs-12">
-                            <div class="content">
-                                <p class="type">POCKET</p>
+                            <h2 class="name">
+                                Kitchen Compressed <!--<span class="color blue"></span>-->
+                            </h2>
 
-                                <h2 class="name">
-                                    Pocket Colored <!--<span class="color blue"></span>-->
-                                </h2>
-
-                                <ul class="options">
-                                    <li>
-                                        <img src="img/products/options/550-Classic-white.png">
-                                        <img src="img/products/option1.png">
-                                        <img src="img/products/option2.png" style="margin-right:0;">
-                                    </li>
-                                </ul>
-                                <ul class="pocket arrows">
-                                    <li class="right">
-                                        <i class="fa fa-angle-left right-arrow"></i>
-                                    </li>
-                                    <li class="left">
-                                        <i class="fa fa-angle-right left-arrow"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-12">
-                            <div class="pocket-slider slider">
-                                <!--<div>
-
-                                    <img src="img/products/all/pocket/1.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/pocket/2.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/pocket/3.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/pocket/4.png">
-                                </div>-->
-                                <div>
-
-                                    <img src="img/products/all/pocket/5.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/pocket/6.png">
-                                </div>
-                                <!--<div>
-                                    <img src="img/products/all/pocket/7.png">
-                                </div>
-                                <div>
-                                    <img src="img/products/all/pocket/8.png">
-                                </div>-->
-                            </div>
+                            <ul class="options">
+                                <li>
+                                    <img src="img/products/options/550-Classic-white.png">
+                                    <img src="img/products/option1.png">
+                                    <img src="img/products/option2.png" style="margin-right:0;">
+                                </li>
+                            </ul>
+                            <ul class="kitchen arrows">
+                                <li class="right">
+                                    <i class="fa fa-angle-left right-arrow"></i>
+                                </li>
+                                <li class="left">
+                                    <i class="fa fa-angle-right left-arrow" style="left: 18px;"></i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+                <!--</div>-->
             </div>
-            <!-- end facial -->
+                <!-- end kitchen -->
+                <!-- POCKET -->
+                <!--<div class="product-details right">
+
+        <div class="col-md-5">
+            <div class="content">
+                <p class="type">POCKET</p>
+
+                <h2 class="name">
+                    Pocket Colored
+                </h2>
+
+                <ul class="options">
+                    <li>
+                        <img src="img/products/options/550-Classic-white.png">
+                        <img src="img/products/option1.png">
+                        <img src="img/products/option2.png" style="margin-right:0;">
+                    </li>
+                </ul>
+                <ul class="pocket arrows">
+                    <li class="right">
+                        <i class="fa fa-angle-left right-arrow"></i>
+                    </li>
+                    <li class="left">
+                        <i class="fa fa-angle-right left-arrow"></i>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </main>
+        <div class="col-md-7">
+            <div class="pocket-slider slider">
+
+                <div class="slide-size">
+                    <img src="img/products/all/pocket/5.png">
+                </div>
+                <div class="slide-size">
+                    <img src="img/products/all/pocket/6.png">
+                </div>
+
+            </div>
+        </div>
+
+    </div>-->
+                <!-- end facial -->
+            </div>
+    </div>
 
     <div id="footer" class="container-fluid">
         <div class="container-fluid">
@@ -1078,8 +1108,8 @@
                         <ul class="footer-menu pull-right">
                             <li><a href="index.html">HOME</a></li>
                             <li><a href="products.html">OUR PRODUCTS</a></li>
-                            <li><a href="#">CAREERS</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="career-list.html">CAREERS</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
                         </ul>
 
                     </div>
