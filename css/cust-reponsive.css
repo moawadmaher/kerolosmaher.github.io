@@ -77,10 +77,10 @@
         background: #f6f4f9;
     }
 
-    .product-details .slick-slide img {
+    /*.product-details .slick-slide img {
         width: 60%;
         padding: 20px;
-    }
+    }*/
 
     .product-details.left .content {
         text-align: center;
@@ -88,6 +88,7 @@
 
     .product-details.left .name, .x.left .name {
         text-align: center;
+        margin: auto;
     }
 
     .product-details.left .type {
@@ -100,6 +101,7 @@
 
     .product-details.right .name, .x.right .name {
         text-align: center;
+        margin:auto;
     }
 
     .product-details.right .type {
@@ -129,6 +131,9 @@
     }
     .contact-page-section {
         height: auto;
+    }
+    img.arrow.animated-arrow {
+        display:none;
     }
 }
 
@@ -206,10 +211,10 @@
         background: #f6f4f9;
     }
 
-    .product-details .slick-slide img {
+    /*.product-details .slick-slide img {
         width: 60%;
         padding: 20px;
-    }
+    }*/
 
     .product-details.left .content {
         text-align: center;
@@ -217,6 +222,7 @@
 
     .product-details.left .name, .x.left .name {
         text-align: center;
+        margin: auto;
     }
 
     .product-details.left .type {
@@ -259,6 +265,9 @@
     }
     .contact-page-section {
         height: auto;
+    }
+    img.arrow.animated-arrow {
+        display: none;
     }
 }
 
@@ -324,10 +333,10 @@
         background: #f6f4f9;
     }
 
-    .product-details .slick-slide img {
+    /*.product-details .slick-slide img {
         width: 30%;
         padding: 20px;
-    }
+    }*/
 
     .product-details.left .content {
         text-align: center;
@@ -335,6 +344,7 @@
 
     .product-details.left .name, .x.left .name {
         text-align: center;
+        margin: auto;
     }
 
     .product-details.left .type {
@@ -364,6 +374,9 @@
 
     .m-b-100 {
         margin-bottom: 30px !important;
+    }
+    img.arrow.animated-arrow {
+        display: none;
     }
 }
 
@@ -413,7 +426,7 @@
 
 
 
-    .product-details .slick-slide img {
+    /*.product-details .slick-slide img {
         width: 50%;
-    }
+    }*/
 }

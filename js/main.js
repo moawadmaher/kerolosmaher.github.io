@@ -183,34 +183,61 @@ $(document).ready(function() {
 
     /* Datepicker */
     $('.datepicker').datepicker({
-        autoclose: true,
+        autoclose: true
     });
 });
 
-//function trigger_nylon() {
-//    $('#nylon').trigger("click");
-//}
+function trigger_nylon() {
+    $('#nylon').trigger("click");
+    $(".loader").show().delay(3000).fadeOut();
+}
 
-//function trigger_Compressed() {
-//    $('#Compressed').trigger("click");
-//}
+function trigger_compressed() {
+    $('#compressed').trigger("click");
+    $(".loader").show().delay(3000).fadeOut();
+}
 
-//function trigger_colored() {
-//    $('#colored').trigger("click");
-//}
+function trigger_classic() {
+    $('#classic').trigger("click");
+    $(".loader").show().delay(3000).fadeOut();
+}
 
-//function trigger_CCompressed() {
-//    $('#CCompressed').trigger("click");
-//}
+function trigger_compressed2() {
+    $('#compressed2').trigger("click");
+    $(".loader").show().delay(3000).fadeOut();
+}
 
-//function trigger_Colorrred() {
-//    $('#Colorrred').trigger("click");
-//}
+function trigger_aroma() {
+    $('.aroma').show();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function loading() {
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+
 
 $(window).load(function() {
     // products
 
-    $('.nylon-slider').slick({
+    //$('.nylon-slider').slick({
+    //    dots: false,
+    //    centerMode: true,
+    //    centerPadding: '0',
+    //    infinite: true,
+    //    autoplay: true,
+    //    autoplaySpeed: 2000,
+    //    slidesToShow: 1,
+    //    slidesToScroll: 1,
+    //    focusOnSelect: true,
+    //    prevArrow: $('ul.nylon li.right'),
+    //    nextArrow: $('ul.nylon li.left')
+    //});
+
+    $('.sliderNavFor').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor',
         dots: false,
         centerMode: true,
         centerPadding: '0',
@@ -220,10 +247,29 @@ $(window).load(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
-        prevArrow: $('ul.nylon li.right'),
-        nextArrow: $('ul.nylon li.left')
+        prevArrow: $('ul.nylon-all-1 li.right'),
+        nextArrow: $('ul.nylon-all-1 li.left')
     });
-    $('.kitchen-slider').slick({
+
+    $('.sliderNavFor1').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor1',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.nylon400 li.right'),
+        nextArrow: $('ul.nylon400 li.left')
+    });
+
+    $('.sliderNavFor2').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor2',
         rtl: true,
         dots: false,
         centerMode: true,
@@ -232,12 +278,303 @@ $(window).load(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 1,
-        slidesToScroll: -1,
+        slidesToScroll: 1,
         focusOnSelect: true,
-        prevArrow: $('ul.kitchen li.right'),
-        nextArrow: $('ul.kitchen li.left')
-        
+        prevArrow: $('ul.nylon550 li.right'),
+        nextArrow: $('ul.nylon550 li.left')
     });
+
+    $('.sliderNavFor3').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor3',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.nylon777 li.right'),
+        nextArrow: $('ul.nylon777 li.left')
+    });
+
+    $('.sliderNavFor4').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor4',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.duplex li.right'),
+        nextArrow: $('ul.duplex li.left')
+    });
+
+    $('.sliderNavFor5').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor5',
+        rtl: true,
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.kitchen-all-1 li.right'),
+        nextArrow: $('ul.kitchen-all-1 li.left')
+    });
+
+    $('.sliderNavFor6').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor6',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.tamara li.right'),
+        nextArrow: $('ul.tamara li.left')
+    });
+
+    $('.sliderNavFor7').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor7',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.aroma li.right'),
+        nextArrow: $('ul.aroma li.left')
+    });
+
+    $('.sliderNavFor8').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor8',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.compressed li.right'),
+        nextArrow: $('ul.compressed li.left')
+    });
+
+    $('.sliderNavFor81').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor81',
+        rtl: true,
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.compressed li.right'),
+        nextArrow: $('ul.compressed li.left')
+    });
+
+    $('.sliderNavFor9').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor9',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.classic li.right'),
+        nextArrow: $('ul.classic li.left')
+    });
+
+    $('.sliderNavFor10').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor10',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.classica li.right'),
+        nextArrow: $('ul.classica li.left')
+    });
+
+    $('.sliderNavFor11').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor11',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.economy li.right'),
+        nextArrow: $('ul.economy li.left')
+    });
+
+    $('.sliderNavFor12').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor12',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.multi li.right'),
+        nextArrow: $('ul.multi li.left')
+    });
+
+    $('.sliderNavFor13').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor13',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.compressed2 li.right'),
+        nextArrow: $('ul.compressed2 li.left')
+    });
+
+    $('.sliderNavFor131').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor131',
+        rtl: true,
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.compressed2 li.right'),
+        nextArrow: $('ul.compressed2 li.left')
+    });
+
+    $('.sliderNavFor14').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor14',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.economy2 li.right'),
+        nextArrow: $('ul.economy2 li.left')
+    });
+
+    $('.sliderNavFor15').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor15',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.sami2 li.right'),
+        nextArrow: $('ul.sami2 li.left')
+    });
+
+    $('.sliderNavFor16').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor16',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.sami3 li.right'),
+        nextArrow: $('ul.sami3 li.left')
+    });
+
+    $('.sliderNavFor17').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor17',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.aromac3 li.right'),
+        nextArrow: $('ul.aromac3 li.left')
+    });
+
+    //$('.kitchen-slider').slick({
+    //    rtl: true,
+    //    dots: false,
+    //    centerMode: true,
+    //    centerPadding: '0',
+    //    infinite: true,
+    //    autoplay: true,
+    //    autoplaySpeed: 2000,
+    //    slidesToShow: 1,
+    //    slidesToScroll: -1,
+    //    focusOnSelect: true,
+    //    prevArrow: $('ul.kitchen li.right'),
+    //    nextArrow: $('ul.kitchen li.left')
+    //});
+
+
     $('.pocket-slider').slick({
         dots: false,
         centerMode: true,

@@ -1382,7 +1382,7 @@ ul.events {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -120px;
+    margin-top: 0px;
     border-bottom: 0;
     margin-bottom: 70px;
 }
@@ -1450,7 +1450,7 @@ ul.events {
     padding-right: 130px;
 }*/
 
-.all-products .right .content .color,
+/*.all-products .right .content .color,
 .allx .right .content .color {
     float: right;
     margin-top: 5px;
@@ -1459,7 +1459,8 @@ ul.events {
 .all-products .left .content .color,
 .allx .left .content .color {
     float: left;
-}
+    margin-top: 5px;
+}*/
 
 .product-details,
 .x {
@@ -1587,9 +1588,10 @@ ul.events {
 .product-details .name,
 .x .name {
     color: #000;
-    font-size: 29px;
+    font-size: 20px;
     margin: 0;
     margin-bottom: 35px;
+    width: 450px;
 }
 
 .product-details.left .name,
@@ -1608,10 +1610,12 @@ ul.events {
 
 .product-details span.color,
 .x span.color {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     margin-right: 15px;
+    margin-left: 15px;
+    margin-top:5px;
     display: inline-block;
 }
 
@@ -1678,6 +1682,8 @@ ul.events {
     box-shadow: 0px 5px 5px rgba(124, 124, 124, 0.14);
     display: inline-block;
     margin-bottom: 20px;
+    width: auto;
+    margin-top: 30px;
 }
 
     .product-details .options img,
@@ -1689,6 +1695,7 @@ ul.events {
     .product-details .options li:last-child img,
     .x .options li:last-child img {
         margin-right: 15px;
+        width: 70px !important;
     }
 
 .w-100 {
@@ -2657,3 +2664,77 @@ ul.events {
                 margin-bottom: 5px;
                 font-size: 15px;
             }
+
+
+.product-details.left {
+top:unset!important;
+}
+.product-details.right {
+    top: unset !important;
+}
+.nylon {
+position:unset!important;
+}
+
+.aroma {
+    position: unset !important;
+}
+
+.duplex {
+    position: unset !important;
+}
+
+.tamara {
+    position: unset !important;
+}
+
+.compressed {
+    position: unset !important;
+}
+
+.compressed-aroma {
+    position: unset !important;
+}
+
+.semi-compressed {
+    position: unset !important;
+}
+
+.economy {
+    position: unset !important;
+}
+
+.multipurpose-rolls {
+    position: unset !important;
+}
+.classic {
+    position: unset !important;
+}
+
+.aromac {
+    position: unset !important;
+}
+
+.compressed2 {
+    position: unset !important;
+}
+
+.compressed-aroma2 {
+    position: unset !important;
+}
+
+.semi-compressed2 {
+    position: unset !important;
+}
+
+.economy2 {
+    position: unset !important;
+}
+
+.multipurpose-rolls2 {
+    position: unset !important;
+}
+
+/*.sliderNavFor2 .slick-track {
+    transform:unset!important;
+}*/
