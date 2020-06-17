@@ -206,11 +206,131 @@ function trigger_compressed2() {
     $('#compressed2').trigger("click");
     $(".loader").show().delay(3000).fadeOut();
 }
+/////////////////////
 
-function trigger_aroma() {
-    $('.aroma').show();
+function show_nylon() {
+    $('.nylon').css("transform", "unset!important");
+
+    $('.nylon').show();
+    $('.aroma').hide();
+    $('.duplex').hide();
+    $('.tamara').hide();
     $(".loader").show().delay(3000).fadeOut();
 }
+
+function show_aroma() {
+    $('.aroma').css("transform", "unset!important");
+    $('.nylon').hide();
+    $('.aroma').show();
+    $('.duplex').hide();
+    $('.tamara').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_duplex() {
+    $('.duplex').css("transform", "unset!important");
+    $('.nylon').hide();
+    $('.aroma').hide();
+    $('.duplex').show();
+    $('.tamara').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_tamara() {
+    $('.tamara').css("transform", "unset!important");
+    $('.nylon').hide();
+    $('.aroma').hide();
+    $('.duplex').hide();
+    $('.tamara').show();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_compressed2() {
+    $('.compressed2').css("transform", "unset!important");
+    $('.compressed2').show();
+    $('.compressed-aroma2').hide();
+    $('.semi-compressed2').hide();
+    $('.economy2').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_compressed_aroma2() {
+    $('.compressed-aroma2').css("transform", "unset!important");
+    $('.compressed2').hide();
+    $('.compressed-aroma2').show();
+    $('.semi-compressed2').hide();
+    $('.economy2').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_semi_compressed2() {
+    $('.semi-compressed2').css("transform", "unset!important");
+    $('.compressed2').hide();
+    $('.compressed-aroma2').hide();
+    $('.semi-compressed2').show();
+    $('.economy2').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_economy2() {
+    $('.economy2').css("transform", "unset!important");
+    $('.compressed2').hide();
+    $('.compressed-aroma2').hide();
+    $('.semi-compressed2').hide();
+    $('.economy2').show();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_compressed() {
+    $('.compressed').css("transform", "unset!important");
+    $('.compressed').show();
+    $('.semi-compressed').hide();
+    $('.economy').hide();
+    $('.multipurpose-rolls').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_semi_compressed() {
+    $('.semi-compressed').css("transform", "unset!important");
+    $('.compressed').hide();
+    $('.semi-compressed').show();
+    $('.economy').hide();
+    $('.multipurpose-rolls').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_economy() {
+    $('.economy').css("transform", "unset!important");
+    $('.compressed').hide();
+    $('.semi-compressed').hide();
+    $('.economy').show();
+    $('.multipurpose-rolls').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_multipurpose_rolls() {
+    $('.multipurpose-rolls').css("transform", "unset!important");
+    $('.compressed').hide();
+    $('.semi-compressed').hide();
+    $('.economy').hide();
+    $('.multipurpose-rolls').show();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_classic() {
+    $('.classic').css("transform", "unset!important");
+    $('.classic').show();
+    $('.aromac').hide();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
+function show_aromac() {
+    $('.aromac').css("transform", "unset!important");
+    $('.classic').hide();
+    $('.aromac').show();
+    $(".loader").show().delay(3000).fadeOut();
+}
+
 
 function loading() {
     $(".loader").show().delay(3000).fadeOut();

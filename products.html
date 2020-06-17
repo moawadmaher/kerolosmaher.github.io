@@ -90,6 +90,12 @@
                 </a>
             </li>
             <li>
+                <a data-toggle="tab" href="#menu3" class="Toilet" onclick="trigger_compressed2();">
+                    <img src="img/products/product4.png">
+                    <p>Toilet</p>
+                </a>
+            </li>
+            <li>
                 <a data-toggle="tab" href="#menu1" class="kitchen" onclick="trigger_compressed();">
                     <img src="img/products/product2.png">
                     <p>Kitchen</p>
@@ -101,18 +107,13 @@
                     <p>Pocket</p>
                 </a>
             </li>
-            <li>
-                <a data-toggle="tab" href="#menu3" class="Toilet" onclick="trigger_compressed2();">
-                    <img src="img/products/product4.png">
-                    <p>Toilet</p>
-                </a>
-            </li>
+
             <!--<li>
-                <a data-toggle="tab" href="#menu4" class="Napkins">
-                    <img src="img/products/product5.png">
-                    <p>Napkins</p>
-                </a>
-            </li>-->
+        <a data-toggle="tab" href="#menu4" class="Napkins">
+            <img src="img/products/product5.png">
+            <p>Napkins</p>
+        </a>
+    </li>-->
         </ul>
         <!-- end tabs buttons -->
         <!-- start tabs content -->
@@ -121,10 +122,10 @@
             <div id="menu0" class="tab-pane fade">
                 <div class="single-product-details">
                     <div class="button-group filter-button-group">
-                        <button data-filter=".nylon" class="active in" id="nylon" onclick="loading()">Nylon</button>
-                        <button data-filter=".aroma" id="aroma" onclick="trigger_aroma()">Aroma</button>
-                        <button data-filter=".duplex" id="duplex" onclick="loading()">Duplex</button>
-                        <button data-filter=".tamara" id="tamara" onclick="loading()">Tamara</button>
+                        <button data-filter=".nylon" class="active in" id="nylon" onclick="show_nylon()">Nylon</button>
+                        <button data-filter=".aroma" id="aroma" onclick="show_aroma()">Aroma</button>
+                        <button data-filter=".duplex" id="duplex" onclick="show_duplex()">Duplex</button>
+                        <button data-filter=".tamara" id="tamara" onclick="show_tamara()">Tamara</button>
                     </div>
                     <div class="items visible">
                         <!-- facial -->
@@ -135,11 +136,11 @@
                                     <div class="col-md-5">
                                         <div class="content">
                                             <p class="type">FACIAL</p>
-                                            
+
                                             <div class="sliderNavFor1" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 100 Colored <span class="color blue"></span>
+                                                        Nylon 100T Colored <span class="color blue"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -152,7 +153,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 100 Colored <span class="color pink"></span>
+                                                        Nylon 100T Colored <span class="color pink"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -165,7 +166,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 400 Colored <span class="color blue"></span>
+                                                        Nylon 400T Colored <span class="color blue"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -178,7 +179,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 400 Colored <span class="color green"></span>
+                                                        Nylon 400T Colored <span class="color green"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -190,7 +191,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 400 Colored <span class="color pink"></span>
+                                                        Nylon 400T Colored <span class="color pink"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -202,7 +203,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 400 Colored <span class="color yellow"></span>
+                                                        Nylon 400T Colored <span class="color yellow"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -280,7 +281,7 @@
                                             <div dir="rtl" class="sliderNavFor2" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 550 Colored <span class="color blue"></span>
+                                                        Nylon 550T Colored <span class="color blue"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -293,7 +294,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 550 Colored <span class="color green"></span>
+                                                        Nylon 550T Colored <span class="color green"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -306,7 +307,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 550 Colored <span class="color pink"></span>
+                                                        Nylon 550T Colored <span class="color pink"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -319,7 +320,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 550 Colored <span class="color yellow"></span>
+                                                        Nylon 550T Colored <span class="color yellow"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -332,7 +333,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 550 Classic
+                                                        Nylon 550T Classic
                                                     </h2>
 
                                                     <ul class="options">
@@ -366,7 +367,7 @@
                                             <div class="sliderNavFor3" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 777 Colored <span class="color blue"></span>
+                                                        Nylon 777T Colored <span class="color blue"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -377,7 +378,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Nylon 777 Colored <span class="color pink"></span>
+                                                        Nylon 777T Colored <span class="color pink"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -411,6 +412,41 @@
                                 </div>
                                 <!--</div>-->
                             </div>
+                            <div class="product-details left">
+                                <!--<div class="container">-->
+                                <div class="row m-b-100">
+                                    <div class="col-md-7" style="padding:0;">
+                                        <div class="background-left"></div>
+                                        <div class="kitchen-slider slider">
+                                            <div class="slide-size">
+                                                <img class="one-img" src="img/products/all/facial/Facial Nylon/Nylon 550 Baby/Nylon-550-Baby.png" style="width: 40%;float: right;margin-right: 50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <p class="type">FACIAL</p>
+
+                                            <div style="height:200px;">
+                                                <div>
+                                                    <h2 class="name" style="width:auto;">
+                                                        Nylon Baby 550T
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/550-Classic-white.png" style="margin-right:0;" />
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </div>
                         </div>
                         <div class="aroma" style="display: none;">
                             <div class="product-details right aroma1">
@@ -423,7 +459,7 @@
                                             <div class="sliderNavFor6" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Aroma 550 <span class="color aud"></span>
+                                                        Aroma 550T <span class="color aud"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -436,7 +472,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Aroma 550 <span class="color frawla"></span>
+                                                        Aroma 550T <span class="color frawla"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -449,7 +485,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Aroma 550 <span class="color peach"></span>
+                                                        Aroma 550T <span class="color peach"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -506,7 +542,7 @@
                                             <div class="sliderNavFor4" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Duplex 600
+                                                        Duplex 600T
                                                     </h2>
 
                                                     <ul class="options">
@@ -518,7 +554,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Duplex 300
+                                                        Duplex 300T
                                                     </h2>
 
                                                     <ul class="options">
@@ -530,7 +566,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Duplex 200
+                                                        Duplex 200T
                                                     </h2>
 
                                                     <ul class="options">
@@ -540,18 +576,7 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Duplex Can 150
-                                                    </h2>
 
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
 
                                             </div>
 
@@ -577,9 +602,7 @@
                                             <div class="slide-size">
                                                 <img src="img/products/all/facial/Facial Duplex/Duplex Classic/Facial-Duplex-200.png">
                                             </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/car/can-150.png">
-                                            </div>
+
 
 
                                         </div>
@@ -587,8 +610,42 @@
                                 </div>
                                 <!--</div>-->
                             </div>
+                            <div class="product-details left">
+                                <!--<div class="container">-->
+                                <div class="row m-b-100">
+                                    <div class="col-md-7" style="padding:0;">
+                                        <div class="background-left"></div>
+                                        <div class="kitchen-slider slider">
+                                            <div class="slide-size">
+                                                <img class="one-img" src="img/products/all/car/can-150.png" style="width: 40%;float: right;margin-right: 50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <p class="type">FACIAL</p>
+
+                                            <div style="height:200px;">
+                                                <div>
+                                                    <h2 class="name" style="width:auto;">
+                                                        Duplex Can 150T
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </div>
                         </div>
-                        <div class="tamara"  style="display: none;">
+                        <div class="tamara" style="display: none;">
                             <div class="product-details right">
                                 <!--<div class="container">-->
                                 <div class="row m-b-100">
@@ -599,7 +656,7 @@
                                             <div class="sliderNavFor7" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Tamara 400 <span class="color green"></span>
+                                                        Tamara 400T <span class="color green"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -611,7 +668,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Tamara 400 <span class="color blue"></span>
+                                                        Tamara 400T <span class="color blue"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -656,13 +713,280 @@
                     </div>
                 </div>
             </div>
+            <div id="menu3" class="tab-pane fade">
+                <div class="single-product-details">
+                    <div class="button-group filter-button-group">
+                        <button data-filter=".compressed2" class="active in" id="compressed2" onclick="show_compressed2()">Compressed</button>
+                        <button data-filter=".compressed-aroma2" id="compressed-aroma2" onclick="show_compressed_aroma2()">Compressed Aroma</button>
+                        <button data-filter=".semi-compressed2" id="semi-compressed2" onclick="show_semi_compressed2()">Semi Compressed</button>
+                        <button data-filter=".economy2" id="economy2" onclick="show_economy2()">Economy</button>
+                    </div>
+                    <div class="items visible">
+                        <!-- facial -->
+                        <div class="compressed2">
+                            <div class="product-details right">
+                                <!--<div class="container">-->
+                                <div class="row m-b-100">
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <p class="type">Toilet</p>
+
+                                            <div class="sliderNavFor13" style="height:200px;">
+                                                <div>
+                                                    <h2 class="name">
+                                                        Compressed 2 Rolls <span class="color blue"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/2-Rolls-Kitchen-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h2 class="name">
+                                                        Compressed 4 Rolls <span class="color blue"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/4-Rolls-Kitchen-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h2 class="name">
+                                                        Compressed 6 Rolls <span class="color blue"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h2 class="name">
+                                                        Compressed 12 Rolls <span class="color blue"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/12-Rolls-Toilet-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="compressed2 arrows">
+                                                <li class="right">
+                                                    <i class="fa fa-angle-left right-arrow"></i>
+                                                </li>
+                                                <li class="left">
+                                                    <i class="fa fa-angle-right left-arrow"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" style="padding:0;">
+                                        <div class="background-right"></div>
+                                        <div class="sliderNavFor13 nylon-slider slider">
+                                            <div class="slide-size">
+                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-2-Rolls.png">
+                                            </div>
+                                            <div class="slide-size">
+                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-4-Rolls.png">
+                                            </div>
+                                            <div class="slide-size">
+                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-6-Rolls.png">
+                                            </div>
+                                            <div class="slide-size">
+                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-12-Rolls.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="compressed-aroma2" style="display: none;">
+                            <div class="product-details right">
+                                <!--<div class="container">-->
+                                <div class="row m-b-100">
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <p class="type">Toilet</p>
+
+                                            <div style="height:200px;">
+                                                <div>
+                                                    <h2 class="name" style="width:auto;">
+                                                        Compressed Lavender Core 6 Rolls
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" style="padding:0;">
+                                        <div class="background-right"></div>
+                                        <div class="nylon-slider slider">
+
+                                            <div class="slide-size">
+                                                <img class="one-img" src="img/products/all/toilet/Toilet Aroma/Toilet Aroma.png" style="width: 40%;float: left;margin-left: 50px;">
+                                            </div>
+
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="semi-compressed2" style="display: none;">
+                            <div class="product-details right">
+                                <!--<div class="container">-->
+                                <div class="row m-b-100">
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <p class="type">Toilet</p>
+
+                                            <div style="height:200px;">
+                                                <div>
+                                                    <h2 class="name" style="width:auto;">
+                                                        Saving Compressed <span class="color green"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" style="padding:0;">
+                                        <div class="background-right"></div>
+                                        <div class="nylon-slider slider">
+                                            <div class="slide-size">
+                                                <img class="one-img" src="img/products/all/toilet/Toilet Semi Compressed/Toilet-Semi-Compressed.png" style="width: 40%;float: left;margin-left: 50px;">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="economy2" style="display: none;">
+                            <div class="product-details right">
+                                <!--<div class="container">-->
+                                <div class="row m-b-100">
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <p class="type">Toilet</p>
+
+                                            <div class="sliderNavFor14" style="height:200px;">
+                                                <div>
+                                                    <h2 class="name">
+                                                        Economy 2 Rolls <span class="color blue"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/12-Rolls-Toilet-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h2 class="name">
+                                                        Economy 9 Rolls <span class="color blue"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/9-Rolls-Toilet white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h2 class="name">
+                                                        Economy 24 Rolls <span class="color blue"></span>
+                                                    </h2>
+
+                                                    <ul class="options">
+                                                        <li>
+                                                            <img src="img/products/options/24-Rolls-Toilet-white.png">
+                                                            <img src="img/products/option1.png" />
+                                                            <img src="img/products/option2.png" style="margin-right:0;" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="multi arrows">
+                                                <li class="right">
+                                                    <i class="fa fa-angle-left right-arrow"></i>
+                                                </li>
+                                                <li class="left">
+                                                    <i class="fa fa-angle-right left-arrow"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" style="padding:0;">
+                                        <div class="background-right"></div>
+                                        <div class="sliderNavFor14 nylon-slider slider">
+                                            <div class="slide-size">
+                                                <img src="img/products/all/toilet/Economy/Toilet-Economy-2-Rolls.png">
+                                            </div>
+                                            <div class="slide-size">
+                                                <img src="img/products/all/toilet/Economy/Toilet-Economy-9-Rolls.png">
+                                            </div>
+                                            <div class="slide-size">
+                                                <img src="img/products/all/toilet/Economy/Toilet-Economy-24-Rolls.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="menu1" class="tab-pane fade">
                 <div class="single-product-details">
                     <div class="button-group filter-button-group">
-                        <button data-filter=".compressed" class="active in" id="compressed" onclick="loading()">Compressed</button>
-                        <button data-filter=".semi-compressed" id="semi-compressed" onclick="loading()">Semi Compressed</button>
-                        <button data-filter=".economy" id="economy" onclick="loading()">Economy</button>
-                        <button data-filter=".multipurpose-rolls" id="multipurpose-rolls" onclick="loading()">Multipurpose Rolls</button>
+                        <button data-filter=".compressed" class="active in" id="compressed" onclick="show_compressed()">Compressed</button>
+                        <button data-filter=".semi-compressed" id="semi-compressed" onclick="show_semi_compressed()">Semi Compressed</button>
+                        <button data-filter=".economy" id="economy" onclick="show_economy()">Economy</button>
+                        <button data-filter=".multipurpose-rolls" id="multipurpose-rolls" onclick="show_multipurpose_rolls()">Multipurpose Rolls</button>
                     </div>
                     <div class="items visible">
                         <!-- facial -->
@@ -677,7 +1001,7 @@
                                             <div class="sliderNavFor8" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Extra Compressed 2 Roll <span class="color yellow"></span>
+                                                        Extra Compressed 2 Rolls <span class="color yellow"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -690,7 +1014,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Compressed 2 Roll <span class="color yellow"></span>
+                                                        Compressed 2 Rolls <span class="color yellow"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -703,7 +1027,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Compressed 4 Roll <span class="color yellow"></span>
+                                                        Compressed 4 Rolls <span class="color yellow"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -743,7 +1067,7 @@
                                 <!--</div>-->
                             </div>
                         </div>
-                        <div class="semi-compressed"  style="display: none;">
+                        <div class="semi-compressed" style="display: none;">
                             <div class="product-details right">
                                 <!--<div class="container">-->
                                 <div class="row m-b-100">
@@ -751,23 +1075,10 @@
                                         <div class="content">
                                             <p class="type">Kitchen</p>
 
-                                            <div class="sliderNavFor15" style="height:200px;">
+                                            <div style="height:200px;">
                                                 <div>
-                                                    <h2 class="name">
-                                                        Sponge Semi-Compressed 2 Roll <span class="color orange"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/2-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Sponge Semi-Compressed 2 Roll <span class="color orange"></span>
+                                                    <h2 class="name" style="width:auto;">
+                                                        Sponge Semi-Compressed 2 Rolls <span class="color orange"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -779,24 +1090,13 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <ul class="semi-compressed arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                     <div class="col-md-7" style="padding:0;">
                                         <div class="background-right"></div>
-                                        <div class="sliderNavFor15 nylon-slider slider">
+                                        <div class="nylon-slider slider">
                                             <div class="slide-size">
-                                                <img src="img/products/all/kitchen/Semi Compressed/Semi-Compressed.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/kitchen/Semi Compressed/Semi-Compressed.png">
+                                                <img class="one-img" src="img/products/all/kitchen/Semi Compressed/Semi-Compressed.png" style="width: 40%;float: left;margin-left: 50px;">
                                             </div>
                                         </div>
                                     </div>
@@ -804,7 +1104,7 @@
                                 <!--</div>-->
                             </div>
                         </div>
-                        <div class="economy"  style="display: none;">
+                        <div class="economy" style="display: none;">
                             <div class="product-details right">
                                 <!--<div class="container">-->
                                 <div class="row m-b-100">
@@ -815,7 +1115,7 @@
                                             <div class="sliderNavFor11" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Kitchen Classic 2 Roll <span class="color orange"></span>
+                                                        Kitchen Classic 2 Rolls <span class="color orange"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -828,7 +1128,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Kitchen Classic 4 Roll <span class="color orange"></span>
+                                                        Kitchen Classic 4 Rolls <span class="color orange"></span>
                                                     </h2>
 
                                                     <ul class="options">
@@ -876,7 +1176,7 @@
                                             <div class="slide-size">
                                                 <img src="img/products/all/kitchen/Economy/Kitchen-Economy-6-Rolls.png">
                                             </div>
-                                            
+
 
                                         </div>
                                     </div>
@@ -884,7 +1184,7 @@
                                 <!--</div>-->
                             </div>
                         </div>
-                        <div class="multipurpose-rolls"  style="display: none;">
+                        <div class="multipurpose-rolls" style="display: none;">
                             <div class="product-details right">
                                 <!--<div class="container">-->
                                 <div class="row m-b-100">
@@ -964,8 +1264,8 @@
             <div id="menu2" class="tab-pane fade">
                 <div class="single-product-details">
                     <div class="button-group filter-button-group">
-                        <button data-filter=".classic" class="active in" id="classic" onclick="loading()">Classic</button>
-                        <button data-filter=".aromac" onclick="loading()">Aroma</button>
+                        <button data-filter=".classic" class="active in" id="classic" onclick="show_classic()">Classic</button>
+                        <button data-filter=".aromac" id="aromac" onclick="show_aromac()">Aroma</button>
                     </div>
                     <div class="items visible">
                         <!-- facial -->
@@ -980,7 +1280,7 @@
                                             <div class="sliderNavFor9" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Pocket Classic Blue <span class="color blue"></span>
+                                                        Pocket 10T Colored 10T <span class="color blue"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -991,7 +1291,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Pocket Classic Green <span class="color green"></span>
+                                                        Pocket 10T Colored 10T <span class="color green"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -1002,7 +1302,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Pocket Classic Pink <span class="color pink"></span>
+                                                        Pocket 10T Colored 10T <span class="color pink"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -1013,7 +1313,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Pocket Classic Yellow <span class="color yellow"></span>
+                                                        Pocket Colored 10T <span class="color yellow"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -1054,7 +1354,7 @@
                                 <!--</div>-->
                             </div>
                         </div>
-                        <div class="aromac"  style="display: none;">
+                        <div class="aromac" style="display: none;">
                             <div class="product-details right">
                                 <!--<div class="container">-->
                                 <div class="row m-b-100">
@@ -1065,7 +1365,7 @@
                                             <div class="sliderNavFor10" style="height:200px;">
                                                 <div>
                                                     <h2 class="name">
-                                                        Pocket Aroma Oud <span class="color aud"></span>
+                                                        Aroma Oud 10T <span class="color aud"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -1076,7 +1376,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Pocket Aroman Peach <span class="color peach"></span>
+                                                        Aroma Peach 10T <span class="color peach"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -1087,18 +1387,7 @@
                                                 </div>
                                                 <div>
                                                     <h2 class="name">
-                                                        Pocket Aroma Strawberry <span class="color frawla"></span>
-                                                    </h2>
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Pocket Aroma Mango <span class="color mango"></span>
+                                                        Aroma Strawberry 10T <span class="color frawla"></span>
                                                     </h2>
                                                     <ul class="options">
                                                         <li>
@@ -1130,316 +1419,6 @@
                                             <div class="slide-size">
                                                 <img src="img/products/all/pocket/Pocket Aroma/Pocket-Strawberry.png">
                                             </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/pocket/Pocket Aroma/Pocket-Mango.png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--</div>-->
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div id="menu3" class="tab-pane fade">
-                <div class="single-product-details">
-                    <div class="button-group filter-button-group">
-                        <button data-filter=".compressed2" class="active in" id="compressed2" onclick="loading()">Compressed</button>
-                        <button data-filter=".compressed-aroma2" onclick="loading()">Compressed Aroma</button>
-                        <button data-filter=".semi-compressed2" onclick="loading()">Semi Compressed</button>
-                        <button data-filter=".economy2" onclick="loading()">Economy</button>
-                    </div>
-                    <div class="items visible">
-                        <!-- facial -->
-                        <div class="compressed2">
-                            <div class="product-details right">
-                                <!--<div class="container">-->
-                                <div class="row m-b-100">
-                                    <div class="col-md-5">
-                                        <div class="content">
-                                            <p class="type">Toilet</p>
-
-                                            <div class="sliderNavFor13" style="height:200px;">
-                                                <div>
-                                                    <h2 class="name">
-                                                        Compressed 2 Roll <span class="color blue"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/2-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Compressed 4 Roll <span class="color blue"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/4-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Compressed 6 Roll <span class="color blue"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Compressed 12 Roll <span class="color blue"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/12-Rolls-Toilet-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <ul class="compressed2 arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7" style="padding:0;">
-                                        <div class="background-right"></div>
-                                        <div class="sliderNavFor13 nylon-slider slider">
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-2-Rolls.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-4-Rolls.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-6-Rolls.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Compressed/Toilet-Compressed-12-Rolls.png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <div class="compressed-aroma2"  style="display: none;">
-                            <div class="product-details right">
-                                <!--<div class="container">-->
-                                <div class="row m-b-100">
-                                    <div class="col-md-5">
-                                        <div class="content">
-                                            <p class="type">Toilet</p>
-
-                                            <div class="sliderNavFor17" style="height:200px;">
-                                                <div>
-                                                    <h2 class="name">
-                                                        Compressed Lavender Core 6 Roll
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Compressed Lavender Core 6 Roll
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                            <ul class="aromac3 arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7" style="padding:0;">
-                                        <div class="background-right"></div>
-                                        <div class="sliderNavFor17 nylon-slider slider">
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Toilet Aroma/Toilet Aroma.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Toilet Aroma/Toilet Aroma.png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <div class="semi-compressed2"  style="display: none;">
-                            <div class="product-details right">
-                                <!--<div class="container">-->
-                                <div class="row m-b-100">
-                                    <div class="col-md-5">
-                                        <div class="content">
-                                            <p class="type">Kitchen</p>
-
-                                            <div class="sliderNavFor16" style="height:200px;">
-                                                <div>
-                                                    <h2 class="name">
-                                                        Saving Compressed <span class="color green"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Saving Compressed <span class="color green"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/6-Rolls-Kitchen-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <ul class="semi3 arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7" style="padding:0;">
-                                        <div class="background-right"></div>
-                                        <div class="sliderNavFor16 nylon-slider slider">
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Toilet Semi Compressed/Toilet-Semi-Compressed.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Toilet Semi Compressed/Toilet-Semi-Compressed.png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <div class="economy2"  style="display: none;">
-                            <div class="product-details right">
-                                <!--<div class="container">-->
-                                <div class="row m-b-100">
-                                    <div class="col-md-5">
-                                        <div class="content">
-                                            <p class="type">Toilet</p>
-
-                                            <div class="sliderNavFor14" style="height:200px;">
-                                                <div>
-                                                    <h2 class="name">
-                                                        Economy 2 Roll <span class="color blue"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/12-Rolls-Toilet-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Economy 9 Roll <span class="color blue"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/9-Rolls-Toilet white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h2 class="name">
-                                                        Economy 24 Roll <span class="color blue"></span>
-                                                    </h2>
-
-                                                    <ul class="options">
-                                                        <li>
-                                                            <img src="img/products/options/24-Rolls-Toilet-white.png">
-                                                            <img src="img/products/option1.png" />
-                                                            <img src="img/products/option2.png" style="margin-right:0;" />
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <ul class="multi arrows">
-                                                <li class="right">
-                                                    <i class="fa fa-angle-left right-arrow"></i>
-                                                </li>
-                                                <li class="left">
-                                                    <i class="fa fa-angle-right left-arrow"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7" style="padding:0;">
-                                        <div class="background-right"></div>
-                                        <div class="sliderNavFor14 nylon-slider slider">
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Economy/Toilet-Economy-2-Rolls.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Economy/Toilet-Economy-9-Rolls.png">
-                                            </div>
-                                            <div class="slide-size">
-                                                <img src="img/products/all/toilet/Economy/Toilet-Economy-24-Rolls.png">
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1449,6 +1428,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -1466,7 +1446,7 @@
                         <div class="sliderNavFor1" style="height:200px;">
                             <div>
                                 <h2 class="name">
-                                    Nylon 100 Colored <span class="color blue"></span>
+                                    Nylon 100T Colored <span class="color blue"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1479,7 +1459,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Nylon 100 Colored <span class="color pink"></span>
+                                    Nylon 100T Colored <span class="color pink"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1492,7 +1472,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Nylon 400 Colored <span class="color blue"></span>
+                                    Nylon 400T Colored <span class="color blue"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1505,7 +1485,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Nylon 400 Colored <span class="color green"></span>
+                                    Nylon 400T Colored <span class="color green"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1517,7 +1497,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Nylon 400 Colored <span class="color pink"></span>
+                                    Nylon 400T Colored <span class="color pink"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1529,7 +1509,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Nylon 400 Colored <span class="color yellow"></span>
+                                    Nylon 400T Colored <span class="color yellow"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1602,7 +1582,7 @@
                         <div dir="rtl" class="sliderNavFor81" style="height:200px;">
                             <div>
                                 <h2 class="name">
-                                    Extra Compressed 2 Roll <span class="color yellow"></span>
+                                    Extra Compressed 2 Rolls <span class="color yellow"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1615,7 +1595,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Compressed 2 Roll <span class="color yellow"></span>
+                                    Compressed 2 Rolls <span class="color yellow"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1628,7 +1608,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Compressed 4 Roll <span class="color yellow"></span>
+                                    Compressed 4 Rolls <span class="color yellow"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1770,7 +1750,7 @@
                         <div dir="rtl" class="sliderNavFor131" style="height:200px;">
                             <div>
                                 <h2 class="name">
-                                    Compressed 2 Roll <span class="color blue"></span>
+                                    Compressed 2 Rolls <span class="color blue"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1783,7 +1763,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Compressed 4 Roll <span class="color blue"></span>
+                                    Compressed 4 Rolls <span class="color blue"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1796,7 +1776,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Compressed 6 Roll <span class="color blue"></span>
+                                    Compressed 6 Rolls <span class="color blue"></span>
                                 </h2>
 
                                 <ul class="options">
@@ -1809,7 +1789,7 @@
                             </div>
                             <div>
                                 <h2 class="name">
-                                    Compressed 12 Roll <span class="color blue"></span>
+                                    Compressed 12 Rolls <span class="color blue"></span>
                                 </h2>
 
                                 <ul class="options">
