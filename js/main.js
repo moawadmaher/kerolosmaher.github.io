@@ -362,7 +362,7 @@ $(window).load(function() {
         centerMode: true,
         centerPadding: '0',
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -518,6 +518,7 @@ $(window).load(function() {
         nextArrow: $('ul.aroma li.left')
     });
 
+
     $('.sliderNavFor8').slick({
         lazyLoad: 'ondemand',
         asNavFor: '.sliderNavFor8',
@@ -526,7 +527,7 @@ $(window).load(function() {
         centerMode: true,
         centerPadding: '0',
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
