@@ -534,9 +534,9 @@ ul.arrows li {
     cursor: pointer;
 }
 
-    ul.arrows li:first-child {
-        margin-right: 22px;
-    }
+.product-details.right ul.arrows li:first-child {
+    margin-right: 22px;
+}
 
     ul.arrows li i {
         font-size: 50px;
