@@ -5,6 +5,29 @@ $(window).load(function() {
     $(".contact-hero img.arrow").addClass("animated-arrow");
     $(".contact-page-section .info").addClass("animated-info-box");
 });
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 700;
+    document.documentElement.scrollTop = 700;
+}
+
+
+
 $(document).ready(function() {
 
     /* Home Slider */
@@ -653,6 +676,7 @@ $(window).load(function() {
     $('.sliderNavFor14').slick({
         lazyLoad: 'ondemand',
         asNavFor: '.sliderNavFor14',
+        rtl: true,
         dots: false,
         centerMode: true,
         centerPadding: '0',
