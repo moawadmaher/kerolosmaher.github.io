@@ -4,6 +4,9 @@ $(window).load(function() {
 
     $(".contact-hero img.arrow").addClass("animated-arrow");
     $(".contact-page-section .info").addClass("animated-info-box");
+
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
 });
 
 //Get the button
