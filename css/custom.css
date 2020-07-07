@@ -655,7 +655,7 @@ ul.arrows li {
 }
 
 .product-details.right .product-title {
-    text-align: right;
+    text-align: left;
     float: left;
     margin-left: 100px;
 }
@@ -2895,17 +2895,14 @@ ul.events {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    font-size: 50px;
+    font-size: 40px;
     border: none;
     outline: none;
-    background: #552988;
-    box-shadow: 0 10px 20px rgba(85, 41, 136, 0.3);
-    color: white;
+    color: #552988;
     cursor: pointer;
-    padding: 5px;
     border-radius: 100%;
-    height: 60px;
-    width: 60px;
+    background: transparent;
+    margin-bottom: 100px;
 }
 
     #myBtn:hover {
