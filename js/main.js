@@ -229,6 +229,8 @@ function trigger_compressed2() {
     $('#compressed2').trigger("click");
     $(".loader").show().delay(3000).fadeOut();
 }
+
+
 /////////////////////
 
 function show_nylon() {
@@ -546,6 +548,22 @@ $(window).load(function() {
         lazyLoad: 'ondemand',
         asNavFor: '.sliderNavFor8',
         rtl: true,
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.compressed li.right'),
+        nextArrow: $('ul.compressed li.left')
+    });
+
+    $('.sliderNavFor80').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor80',
         dots: false,
         centerMode: true,
         centerPadding: '0',

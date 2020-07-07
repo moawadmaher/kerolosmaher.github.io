@@ -160,7 +160,7 @@ span.status {
 
 .list {
     color: white;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .item .carousel-caption {
@@ -661,8 +661,7 @@ ul.arrows li {
 }
 
 .product-details.left span.color {
-    float:right;
-
+    float: right;
 }
 
 .product-details.left ul.arrows li:first-child {
@@ -670,32 +669,32 @@ ul.arrows li {
     float: right;
 }
 
-    ul.arrows li i {
-        font-size: 50px;
-        position: absolute;
-        color: #552988;
-        transition: all 0.5s ease-in-out;
+ul.arrows li i {
+    font-size: 50px;
+    position: absolute;
+    color: #552988;
+    transition: all 0.5s ease-in-out;
+}
+
+ul.arrows li i {
+    top: 3px;
+}
+
+    ul.arrows li i.right-arrow {
+        left: 18px;
     }
 
-    ul.arrows li i {
-        top: 3px;
+    ul.arrows li i.left-arrow {
+        left: 23px;
     }
 
-        ul.arrows li i.right-arrow {
-            left: 18px;
-        }
+ul.arrows li:hover {
+    background: #552988;
+}
 
-        ul.arrows li i.left-arrow {
-            left: 23px;
-        }
-
-    ul.arrows li:hover {
-        background: #552988;
+    ul.arrows li:hover i {
+        color: white;
     }
-
-        ul.arrows li:hover i {
-            color: white;
-        }
 
 
 
@@ -1486,7 +1485,7 @@ ul.events {
 
 .product-details,
 .x {
-    position: relative!important;
+    position: relative !important;
     /* padding: 200px 0 100px; */
 }
 
@@ -1642,7 +1641,7 @@ ul.events {
     border-radius: 50%;
     margin-right: 15px;
     margin-left: 15px;
-    margin-top:5px;
+    margin-top: 5px;
     display: inline-block;
 }
 
@@ -1723,6 +1722,7 @@ ul.events {
     right: 25px;
     bottom: 10px;
 }
+
 .product-details.left .options,
 .x .options {
     list-style: none;
@@ -1737,6 +1737,7 @@ ul.events {
     left: 0px;
     bottom: 10px;
 }
+
     .product-details .options img,
     .x .options img {
         width: 70px;
@@ -1748,6 +1749,7 @@ ul.events {
         margin-right: 15px;
         width: 50px !important;
     }
+
     .product-details.left .options li:last-child img,
     .x .options li:last-child img {
         margin-left: 15px;
@@ -1775,7 +1777,6 @@ ul.events {
 .x .arrows {
     margin-top: 20px;
     text-align: center;
-
 }
 
 
@@ -1794,7 +1795,7 @@ ul.events {
     margin-top: 40px;*/
 }
 
-    /*.product-details .slider img,
+/*.product-details .slider img,
     .x .slider img {
         width: 335px;
         padding: 25px;
@@ -1891,9 +1892,9 @@ ul.events {
     left: 23px
 }
 
-.product-details.left .arrows li:first-child i:before {
-    content: "\f105";
-}
+    .product-details.left .arrows li:first-child i:before {
+        content: "\f105";
+    }
 
 .product-details.left .arrows li:last-child i:before {
     content: "\f104";
@@ -1907,13 +1908,13 @@ ul.events {
     text-align: center;
 }
 
-.single-product-details .filter-button-group a {
-    background: none;
-    margin: 10px;
-    margin-bottom: 40px;
-    font-size: 18px;
-    color: #5B6075;
-}
+    .single-product-details .filter-button-group a {
+        background: none;
+        margin: 10px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        color: #5B6075;
+    }
 
 /*.single-product-details .filter-button-group button:last-child {
     margin-right: 0;
@@ -2531,12 +2532,12 @@ ul.events {
     justify-content: center;
 }
 
-.loader img {
-    -webkit-animation: KEYFRAME-NAME 7s infinite;
-    -moz-animation: KEYFRAME-NAME 7s infinite;
-    -o-animation: KEYFRAME-NAME 7s infinite;
-    animation: KEYFRAME-NAME 7s infinite;
-}
+    .loader img {
+        -webkit-animation: KEYFRAME-NAME 7s infinite;
+        -moz-animation: KEYFRAME-NAME 7s infinite;
+        -o-animation: KEYFRAME-NAME 7s infinite;
+        animation: KEYFRAME-NAME 7s infinite;
+    }
 
 @keyframes KEYFRAME-NAME {
     0% {
@@ -2586,14 +2587,14 @@ ul.events {
 
 
 #hero-bg {
-    width:100%;
+    width: 100%;
 }
 
 
 .product-details.right .content {
     /*padding-top: 0;
     padding-left: 100px;*/
-    text-align:center;
+    text-align: center;
 }
 
 .product-details.left .content {
@@ -2735,13 +2736,15 @@ ul.events {
 
 
 .product-details.left {
-top:unset!important;
+    top: unset !important;
 }
+
 .product-details.right {
     top: unset !important;
 }
+
 .nylon {
-position:unset!important;
+    position: unset !important;
 }
 
 .aroma {
@@ -2758,8 +2761,8 @@ position:unset!important;
 
 .compressed {
     position: unset !important;
-    width:142px;
-    margin:auto;
+    width: 142px;
+    margin: auto;
 }
 
 .compressed-aroma {
@@ -2777,6 +2780,7 @@ position:unset!important;
 .multipurpose-rolls {
     position: unset !important;
 }
+
 .classic {
     position: unset !important;
 }
@@ -2811,7 +2815,7 @@ position:unset!important;
 
 
 .slide-size.slick-slide.slick-current.slick-active.slick-center {
-    display: contents!important;
+    display: contents !important;
 }
 
 .h-300 {
@@ -2821,25 +2825,31 @@ position:unset!important;
 .h-400 {
     height: 400px;
 }
+
 .h-500 {
     height: 500px;
 }
+
 .p-0 {
     padding: 0;
 }
+
 .product-details.right .tbl-posi {
-    width: 221px;
+    width: 300px;
     margin: auto;
     margin-top: 180px;
 }
+
 .product-details.left .tbl-posi {
-    width: 221px;
+    width: 300px;
     margin: auto;
     margin-top: 180px;
 }
+
 .cell-border {
     border-right: 1px solid #552988;
 }
+
 .cell-style {
     padding: 5px 10px;
     font-weight: 600;
