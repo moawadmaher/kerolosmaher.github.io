@@ -1,4 +1,6 @@
-$(window).load(function() {
+$(window).load(function () {
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
     $(".loader").fadeOut(1500);
     $("body").css("overflow-y", "auto");
 
@@ -6,7 +8,7 @@ $(window).load(function() {
     $(".contact-page-section .info").addClass("animated-info-box");
 
 
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    
 });
 
 //Get the button
