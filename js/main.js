@@ -1,5 +1,5 @@
 $(window).load(function () {
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    //document.addEventListener('contextmenu', event => event.preventDefault());
 
     $(".loader").fadeOut(1500);
     $("body").css("overflow-y", "auto");

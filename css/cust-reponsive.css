@@ -18,17 +18,7 @@
         padding-left: 60px;
     }
 
-    .product-details.right .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 80px;
-    }
 
-    .product-details.left .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 80px;
-    }
 
     .navbar-right {
         margin-right: 0px;
@@ -176,10 +166,7 @@
         margin-right: unset!important;
     }
 
-    .product-details.left .tbl-posi {
-        margin:auto;
-        margin-top: 35px;
-    }
+  
 }
 
 @media (min-width: 601px) and (max-width: 768px ) {
@@ -198,17 +185,7 @@
         padding-left: 60px;
     }
 
-    .product-details.right .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 80px;
-    }
 
-    .product-details.left .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 50px;
-    }
 
     .navbar-right {
         margin-right: 0px;
@@ -353,6 +330,7 @@
         float: unset !important;
         margin-right: unset !important;
     }
+
 }
 
 
@@ -374,17 +352,7 @@
         padding-left: 60px;
     }
 
-    .product-details.right .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 80px;
-    }
 
-    .product-details.left .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 50px;
-    }
 
     .carousel-indicators {
         bottom: 0;
@@ -521,17 +489,7 @@
         padding-left: 60px;
     }
 
-    .product-details.right .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 80px;
-    }
 
-    .product-details.left .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 50px;
-    }
 
     .carousel-indicators {
         bottom: 0;
@@ -573,17 +531,7 @@
         padding-left: 60px;
     }
 
-    .product-details.right .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 80px;
-    }
 
-    .product-details.left .tbl-posi {
-        width: 221px;
-        margin: auto;
-        margin-top: 50px;
-    }
     .carousel-indicators {
         bottom: 0;
     }
