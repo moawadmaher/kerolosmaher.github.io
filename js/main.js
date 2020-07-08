@@ -31,7 +31,15 @@ function topFunction() {
     document.documentElement.scrollTop = 500;
 }
 
+$('.slide-size img').click(function (e) {
+    console.log(e);
+    $('#imgshow').attr('src', e.originalEvent.path[0].currentSrc);
+    $('#divshow').show();
+});
 
+function closeshow() {
+    $('#divshow').hide();
+}
 
 $(document).ready(function() {
 
@@ -605,15 +613,32 @@ $(window).load(function() {
         dots: false,
         centerMode: true,
         centerPadding: '0',
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.classic li.right'),
+        nextArrow: $('ul.classic li.left')
+    });
+
+    $('.sliderNavFor90').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor90',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
         infinite: false,
         autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
-        prevArrow: $('ul.classic li.right'),
-        nextArrow: $('ul.classic li.left')
+        prevArrow: $('ul.classic90 li.right'),
+        nextArrow: $('ul.classic90 li.left')
     });
+
 
     $('.sliderNavFor10').slick({
         lazyLoad: 'ondemand',
