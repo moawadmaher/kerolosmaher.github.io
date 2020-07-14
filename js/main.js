@@ -233,6 +233,8 @@ function trigger_nylon() {
     $('#tab-category5').find('img').attr("src", "img/products/product5.png");
     $('#tab-category2').find('img').attr("src", "img/products/product2.png");
 
+    document.body.scrollTop = 0;
+
     $('#nylon').trigger("click");
     $(".loader").show().delay(3000).fadeOut();
 }
@@ -247,6 +249,8 @@ function trigger_compressed() {
     $('#tab-category4').find('img').attr("src", "img/products/product4.png");
     $('#tab-category5').find('img').attr("src", "img/products/product5.png");
     $('#tab-category2').find('img').attr("src", "img/products/product2-wh.png");
+
+    document.body.scrollTop = 0;
 
     $('#compressed').trigger("click");
     $(".loader").show().delay(3000).fadeOut();
@@ -263,6 +267,8 @@ function trigger_classic() {
     $('#tab-category5').find('img').attr("src", "img/products/product5.png");
     $('#tab-category2').find('img').attr("src", "img/products/product2.png");
 
+    document.body.scrollTop = 0;
+
     $('#classic').trigger("click");
     $(".loader").show().delay(3000).fadeOut();
 }
@@ -278,6 +284,7 @@ function trigger_compressed2() {
     $('#tab-category5').find('img').attr("src", "img/products/product5.png");
     $('#tab-category2').find('img').attr("src", "img/products/product2.png");
 
+    document.body.scrollTop = 0;
 
     $('#compressed2').trigger("click");
     $(".loader").show().delay(3000).fadeOut();
@@ -291,7 +298,7 @@ function trigger_napkins() {
     $('#tab-category5').find('img').attr("src", "img/products/product5-wh.png");
     $('#tab-category2').find('img').attr("src", "img/products/product2.png");
 
-
+    document.body.scrollTop = 0;
 }
 
 
