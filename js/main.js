@@ -1,5 +1,5 @@
 $(window).load(function () {
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    //document.addEventListener('contextmenu', event => event.preventDefault());
 
     $(".loader").fadeOut(1500);
     $("body").css("overflow-y", "auto");
@@ -291,6 +291,8 @@ function trigger_compressed2() {
 }
 
 function trigger_napkins() {
+    $('.tab-category').removeClass('category-active');
+    $('#tab-category5').addClass('category-active');
 
     $('#tab-category1').find('img').attr("src", "img/products/product1.png");
     $('#tab-category3').find('img').attr("src", "img/products/product3.png");
@@ -299,6 +301,7 @@ function trigger_napkins() {
     $('#tab-category2').find('img').attr("src", "img/products/product2.png");
 
     document.body.scrollTop = 0;
+    $(".loader").show().delay(3000).fadeOut();
 }
 
 
