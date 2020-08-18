@@ -1,5 +1,5 @@
 $(window).load(function () {
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    //document.addEventListener('contextmenu', event => event.preventDefault());
 
     $(".loader").fadeOut(1500);
     $("body").css("overflow-y", "auto");
@@ -437,6 +437,7 @@ function loading() {
 
 
 
+
 $(window).load(function() {
     // products
 
@@ -444,7 +445,7 @@ $(window).load(function() {
     //    dots: false,
     //    centerMode: true,
     //    centerPadding: '0',
-    //    infinite: false,
+    //    infinite: true,
     //    autoplay: true,
     //    autoplaySpeed: 2000,
     //    slidesToShow: 1,
@@ -455,20 +456,39 @@ $(window).load(function() {
     //});
 
     $('.SlideAFNnylon').slick({
+        asNavFor: '.SlideAFNnylono',
         lazyLoad: 'ondemand',
-        asNavFor: '.SlideAFNnylon',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        focusOnSelect: true,
         prevArrow: $('ul.AFNnylon li.right'),
         nextArrow: $('ul.AFNnylon li.left')
     });
+
+    $('.SlideAFNnylono').slick({
+        asNavFor: '.SlideAFNnylon',
+        lazyLoad: 'ondemand',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    $('.SlideAFNnylon').hover(function () {
+        $('.SlideAFNnylon').slick('slickPause');
+    });
+    $('.SlideAFNnylon').mouseleave(function () {
+        $('.SlideAFNnylon').slick('slickPlay');
+    });
+
 
 
     //$('.SlideAFNnylon2').slick({
@@ -477,7 +497,7 @@ $(window).load(function() {
     //    dots: false,
     //    centerMode: true,
     //    centerPadding: '0',
-    //    infinite: false,
+    //    infinite: true,
     //    autoplay: true,
     //    autoplaySpeed: 2000,
     //    slidesToShow: 1,
@@ -487,63 +507,85 @@ $(window).load(function() {
     //    nextArrow: $('ul.AFNnylon li.left')
     //});
 
-    $('.sliderNavFor').slick({
-        lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor',
-        dots: false,
-        centerMode: true,
-        centerPadding: '0',
-        infinite: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.nylon-all-1 li.right'),
-        nextArrow: $('ul.nylon-all-1 li.left')
-    });
 
     $('.sliderNavFor1').slick({
+        asNavFor: '.sliderNavFor1o',
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor1',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        focusOnSelect: true,
         prevArrow: $('ul.nylon400 li.right'),
         nextArrow: $('ul.nylon400 li.left')
     });
 
-    $('.sliderNavFor999').slick({
+    $('.sliderNavFor1o').slick({
+        asNavFor: '.sliderNavFor1',
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor999',
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    $('.sliderNavFor1').hover(function () {
+        $('.sliderNavFor1').slick('slickPause');
+    });
+    $('.sliderNavFor1').mouseleave(function () {
+        $('.sliderNavFor1').slick('slickPlay');
+    });
+
+    $('.sliderNavFor999').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor999o',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.nylon999 li.right'),
         nextArrow: $('ul.nylon999 li.left')
     });
+    $('.sliderNavFor999o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor999',
+        dots: false,
+        
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor999').hover(function () {
+        $('.sliderNavFor999').slick('slickPause');
+    });
+    $('.sliderNavFor999').mouseleave(function () {
+        $('.sliderNavFor999').slick('slickPlay');
+    });
 
     $('.sliderNavFor2').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor2',
+        asNavFor: '.sliderNavFor2o',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -551,15 +593,37 @@ $(window).load(function() {
         nextArrow: $('ul.nylon550 li.left')
     });
 
-    $('.sliderNavFor3').slick({
+    $('.sliderNavFor2o').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor3',
+        asNavFor: '.sliderNavFor2',
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor2').hover(function () {
+        $('.sliderNavFor2').slick('slickPause');
+    });
+    $('.sliderNavFor2').mouseleave(function () {
+        $('.sliderNavFor2').slick('slickPlay');
+    });
+
+
+    $('.sliderNavFor3').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor3o',
+        dots: false,
+        centerPadding: '0',
+        centerMode: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -567,15 +631,36 @@ $(window).load(function() {
         nextArrow: $('ul.nylon777 li.left')
     });
 
+    $('.sliderNavFor3o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor3',
+        dots: false,
+        
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor3').hover(function () {
+        $('.sliderNavFor3').slick('slickPause');
+    });
+    $('.sliderNavFor3').mouseleave(function () {
+        $('.sliderNavFor3').slick('slickPlay');
+    });
+
+
     $('.sliderNavFor4').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor4',
+        asNavFor: '.sliderNavFor4o',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -583,48 +668,37 @@ $(window).load(function() {
         nextArrow: $('ul.duplex500 li.left')
     });
 
-    $('.sliderNavFor5').slick({
+    $('.sliderNavFor4o').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor5',
-        rtl: true,
+        asNavFor: '.sliderNavFor4',
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.kitchen-all-1 li.right'),
-        nextArrow: $('ul.kitchen-all-1 li.left')
+        focusOnSelect: true
     });
 
-    $('.sliderNavFor6').slick({
-        lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor6',
-        dots: false,
-        centerMode: true,
-        centerPadding: '0',
-        infinite: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.tamara li.right'),
-        nextArrow: $('ul.tamara li.left')
+    $('.sliderNavFor4').hover(function () {
+        $('.sliderNavFor4').slick('slickPause');
     });
+    $('.sliderNavFor4').mouseleave(function () {
+        $('.sliderNavFor4').slick('slickPlay');
+    });
+
 
     $('.sliderNavFor7').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor7',
+        asNavFor: '.sliderNavFor7o',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        centerMode: true,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -632,50 +706,112 @@ $(window).load(function() {
         nextArrow: $('ul.aroma li.left')
     });
 
+    $('.sliderNavFor7o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor7',
+        dots: false,
+        
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+
+    $('.sliderNavFor7').hover(function () {
+        $('.sliderNavFor7').slick('slickPause');
+    });
+    $('.sliderNavFor7').mouseleave(function () {
+        $('.sliderNavFor7').slick('slickPlay');
+    });
+
 
     $('.sliderNavFor8').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor8',
+        asNavFor: '.sliderNavFor8o',
         rtl: true,
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.compressed li.right'),
         nextArrow: $('ul.compressed li.left')
     });
+    $('.sliderNavFor8o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor8',
+        rtl: true,
+        dots: false,
+        
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor8').hover(function () {
+        $('.sliderNavFor8').slick('slickPause');
+    });
+    $('.sliderNavFor8').mouseleave(function () {
+        $('.sliderNavFor8').slick('slickPlay');
+    });
 
     $('.sliderNavFor80').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor80o',
+        dots: false,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.compressed80 li.right'),
+        nextArrow: $('ul.compressed80 li.left')
+    });
+    $('.sliderNavFor80o').slick({
         lazyLoad: 'ondemand',
         asNavFor: '.sliderNavFor80',
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.compressed li.right'),
-        nextArrow: $('ul.compressed li.left')
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor80').hover(function () {
+        $('.sliderNavFor80').slick('slickPause');
+    });
+    $('.sliderNavFor80').mouseleave(function () {
+        $('.sliderNavFor80').slick('slickPlay');
     });
 
     $('.sliderNavFor81').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor81',
+        asNavFor: '.sliderNavFor81o',
         rtl: true,
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -683,7 +819,43 @@ $(window).load(function() {
         nextArrow: $('ul.compressed li.left')
     });
 
+    $('.sliderNavFor81o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor81',
+        rtl: true,
+        dots: false,
+        
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor81').hover(function () {
+        $('.sliderNavFor81').slick('slickPause');
+    });
+    $('.sliderNavFor81').mouseleave(function () {
+        $('.sliderNavFor81').slick('slickPlay');
+    });
+
     $('.sliderNavFor9').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor9o',
+        dots: false,
+        centerPadding: '0',
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.classic li.right'),
+        nextArrow: $('ul.classic li.left')
+    });
+    $('.sliderNavFor9o').slick({
         lazyLoad: 'ondemand',
         asNavFor: '.sliderNavFor9',
         dots: false,
@@ -692,22 +864,26 @@ $(window).load(function() {
         infinite: true,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.classic li.right'),
-        nextArrow: $('ul.classic li.left')
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor9').hover(function () {
+        $('.sliderNavFor9').slick('slickPause');
+    });
+    $('.sliderNavFor9').mouseleave(function () {
+        $('.sliderNavFor9').slick('slickPlay');
     });
 
     $('.sliderNavFor90').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor90',
+        asNavFor: '.sliderNavFor90o',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -715,152 +891,249 @@ $(window).load(function() {
         nextArrow: $('ul.classic90 li.left')
     });
 
-
-    $('.sliderNavFor10').slick({
+    $('.sliderNavFor90o').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor10',
+        asNavFor: '.sliderNavFor90',
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor90').hover(function () {
+        $('.sliderNavFor90').slick('slickPause');
+    });
+    $('.sliderNavFor90').mouseleave(function () {
+        $('.sliderNavFor90').slick('slickPlay');
+    });
+
+
+
+    $('.sliderNavFor10').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor10o',
+        dots: false,
+        centerPadding: '0',
+        centerMode: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.classica li.right'),
         nextArrow: $('ul.classica li.left')
     });
+    $('.sliderNavFor10o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor10',
+        dots: false,
+        
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor10').hover(function () {
+        $('.sliderNavFor10').slick('slickPause');
+    });
+    $('.sliderNavFor10').mouseleave(function () {
+        $('.sliderNavFor10').slick('slickPlay');
+    });
+
 
     $('.sliderNavFor11').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor11',
+        asNavFor: '.sliderNavFor11o',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.economy li.right'),
         nextArrow: $('ul.economy li.left')
     });
+    $('.sliderNavFor11o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor11',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor11').hover(function () {
+        $('.sliderNavFor11').slick('slickPause');
+    });
+    $('.sliderNavFor11').mouseleave(function () {
+        $('.sliderNavFor11').slick('slickPlay');
+    });
 
     $('.sliderNavFor12').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor12o',
+        dots: false,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        prevArrow: $('ul.multiee li.right'),
+        nextArrow: $('ul.multiee li.left')
+    });
+    $('.sliderNavFor12o').slick({
         lazyLoad: 'ondemand',
         asNavFor: '.sliderNavFor12',
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.multi li.right'),
-        nextArrow: $('ul.multi li.left')
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor12').hover(function () {
+        $('.sliderNavFor12').slick('slickPause');
+    });
+    $('.sliderNavFor12').mouseleave(function () {
+        $('.sliderNavFor12').slick('slickPlay');
     });
 
     $('.sliderNavFor13').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor13',
+        asNavFor: '.sliderNavFor13o',
         dots: false,
-        centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.compressed2 li.right'),
         nextArrow: $('ul.compressed2 li.left')
     });
+    $('.sliderNavFor13o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor13',
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+    $('.sliderNavFor13').hover(function () {
+        $('.sliderNavFor13').slick('slickPause');
+    });
+    $('.sliderNavFor13').mouseleave(function () {
+        $('.sliderNavFor13').slick('slickPlay');
+    });
+
 
     $('.sliderNavFor131').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor131',
+        asNavFor: '.sliderNavFor131o',
         rtl: true,
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.compressed131 li.right'),
         nextArrow: $('ul.compressed131 li.left')
     });
+    $('.sliderNavFor131o').slick({
+        lazyLoad: 'ondemand',
+        asNavFor: '.sliderNavFor131',
+        rtl: true,
+        dots: false,
+        
+        centerPadding: '0',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+
+    $('.sliderNavFor131').hover(function () {
+        $('.sliderNavFor131').slick('slickPause');
+    });
+    $('.sliderNavFor131').mouseleave(function () {
+        $('.sliderNavFor131').slick('slickPlay');
+    });
 
     $('.sliderNavFor14').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor14',
+        asNavFor: '.sliderNavFor14o',
         rtl: true,
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: $('ul.multi li.right'),
         nextArrow: $('ul.multi li.left')
     });
-
-    $('.sliderNavFor15').slick({
+    $('.sliderNavFor14o').slick({
         lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor15',
+        asNavFor: '.sliderNavFor14',
+        rtl: true,
         dots: false,
-        centerMode: true,
+        
         centerPadding: '0',
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.sami2 li.right'),
-        nextArrow: $('ul.sami2 li.left')
+        focusOnSelect: true
     });
 
-    $('.sliderNavFor16').slick({
-        lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor16',
-        dots: false,
-        centerMode: true,
-        centerPadding: '0',
-        infinite: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.sami3 li.right'),
-        nextArrow: $('ul.sami3 li.left')
+    $('.sliderNavFor14').hover(function () {
+        $('.sliderNavFor14').slick('slickPause');
+    });
+    $('.sliderNavFor14').mouseleave(function () {
+        $('.sliderNavFor14').slick('slickPlay');
     });
 
-    $('.sliderNavFor17').slick({
-        lazyLoad: 'ondemand',
-        asNavFor: '.sliderNavFor17',
-        dots: false,
-        centerMode: true,
-        centerPadding: '0',
-        infinite: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        prevArrow: $('ul.aromac3 li.right'),
-        nextArrow: $('ul.aromac3 li.left')
-    });
+
+
 
 
 
