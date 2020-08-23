@@ -1,7 +1,46 @@
 ﻿@media (min-width: 0px) and (max-width: 600px ) {
 
+    .branches-details .slick-list.draggable {
+        padding: 0 !important;
+    }
+
+    .careers .hero {
+        background: unset;
+        background-color: #552988;
+        height: 30vh
+    }
+
+    .contact-hero h3.title {
+        top: 10vh;
+    }
+
+    .contact-hero {
+        height: 30vh;
+    }
+
+    .branches-details .slick-slider {
+        padding-left: 0px !important;
+    }
+
+    .landing-logo {
+        width: 60% !important;
+        margin: auto !important;
+    }
+
+    img.object-cover {
+        height:440px!important;
+    }
+
+    .col-md-offset-3 {
+        margin-left:0!important;
+    }
+
+    section.csr .csr-slider img, section.qc .qc-slider img {
+        padding-right: 0 !important;
+    }
+
     .div-tbl {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .product-details.left .options, .x .options {
@@ -203,7 +242,7 @@
         margin-bottom: 30px !important;
     }
     .contact-page-section .info {
-        width: 97%;
+        width: 100%;
         left: 0px;
         padding: 30px;
         position: relative;
@@ -234,6 +273,17 @@
         width: 100% !important;
     }
 
+    .contact-hero h3.title {
+        top: 10vh;
+    }
+
+    .contact-hero {
+        height: 30vh;
+    }
+    .col-md-offset-3 {
+        margin-left: 0 !important;
+    }
+
     .product-details.left .options, .x .options {
         left: 0px;
     }
@@ -242,6 +292,27 @@
     }
     .product-details.right .product-title {
 /*        padding-left: 60px;*/
+    }
+
+    .landing-logo {
+        width: 60%!important;
+        margin:auto!important;
+    }
+
+    .branches-details .slick-list.draggable {
+        padding: 0 !important;
+    }
+
+    .branches-details .slick-slider {
+        padding-left: 0px !important;
+    }
+
+    img.object-cover {
+        height: 440px !important;
+    }
+
+    section.csr .csr-slider img, section.qc .qc-slider img {
+        padding-right: 0 !important;
     }
 
 
@@ -372,7 +443,7 @@
     }
 
     .contact-page-section .info {
-        width: 97%;
+        width: 100%;
         left: 0px;
         padding: 30px;
         position: relative;
