@@ -22,13 +22,15 @@
         padding-left: 0px !important;
     }
 
-/*    .landing-logo {
-        width: 60% !important;
+    .branches .for-arrow a.arrow {
+        margin-top: -20px;
+    }
+    /*.landing-logo {
+        width: 105% !important;
         margin: auto !important;
     }*/
-
     img.object-cover {
-        height:440px!important;
+        height: 440px !important;
     }
 
     .col-md-offset-3 {
